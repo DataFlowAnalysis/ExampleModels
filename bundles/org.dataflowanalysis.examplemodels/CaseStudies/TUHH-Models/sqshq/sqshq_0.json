@@ -7,7 +7,8 @@
                 "plaintext_credentials",
                 "infrastructural",
                 "csrf_disabled",
-                "basic_authentication"
+                "basic_authentication",
+                "authentication"
             ],
             "tagged_values": {
                 "Port": 8888,
@@ -93,7 +94,8 @@
                 "pre_authorized_endpoints",
                 "local_logging",
                 "resource_server",
-                "circuit_breaker"
+                "circuit_breaker",
+                "authentication"
             ],
             "tagged_values": {
                 "Port": 6000,
@@ -132,7 +134,8 @@
                 "internal",
                 "local_logging",
                 "pre_authorized_endpoints",
-                "resource_server"
+                "resource_server",
+                "authentication"
             ],
             "tagged_values": {
                 "Port": 7000,
@@ -148,30 +151,50 @@
         },
         {
             "name": "auth_mongodb",
-            "stereotypes": [],
+            "stereotypes": [
+                "database",
+                "plaintext_credentials"
+            ],
             "tagged_values": {
-                "{Process": "auth_mongodb"
+                "Database": "MongoDB",
+                "Username": "user",
+                "Password": "password"
             }
         },
         {
             "name": "account_mongodb",
-            "stereotypes": [],
+            "stereotypes": [
+                "database",
+                "plaintext_credentials"
+            ],
             "tagged_values": {
-                "{Process": "account_mongodb"
+                "Database": "MongoDB",
+                "Username": "user",
+                "Password": "password"
             }
         },
         {
             "name": "statistics_mongodb",
-            "stereotypes": [],
+            "stereotypes": [
+                "database",
+                "plaintext_credentials"
+            ],
             "tagged_values": {
-                "{Process": "statistics_mongodb"
+                "Database": "MongoDB",
+                "Username": "user",
+                "Password": "password"
             }
         },
         {
             "name": "notification_mongodb",
-            "stereotypes": [],
+            "stereotypes": [
+                "database",
+                "plaintext_credentials"
+            ],
             "tagged_values": {
-                "{Process": "notification_mongodb"
+                "Database": "MongoDB",
+                "Username": "user",
+                "Password": "password"
             }
         },
         {
@@ -179,7 +202,8 @@
             "stereotypes": [
                 "gateway",
                 "infrastructural",
-                "load_balancer"
+                "load_balancer",
+                "entrypoint"
             ],
             "tagged_values": {
                 "Gateway": "Zuul",
@@ -265,7 +289,7 @@
                 "circuit_breaker_link"
             ],
             "tagged_values": {
-                "'Circuit Breaker'": "Hystrix"
+                "'Circuit Breaker'": "\"Hystrix\""
             }
         },
         {
@@ -288,7 +312,7 @@
                 "load_balanced_link"
             ],
             "tagged_values": {
-                "'Load Balancer'": "Ribbon"
+                "'Load Balancer'": "\"Ribbon\""
             }
         },
         {
@@ -408,8 +432,8 @@
                 "load_balanced_link"
             ],
             "tagged_values": {
-                "'Circuit Breaker'": "Hystrix",
-                "'Load Balancer'": "Ribbon"
+                "'Circuit Breaker'": "\"Hystrix\"",
+                " 'Load Balancer'": "\"Ribbon\""
             }
         },
         {
@@ -421,7 +445,7 @@
                 "load_balanced_link"
             ],
             "tagged_values": {
-                "'Load Balancer'": "Ribbon"
+                "'Load Balancer'": "\"Ribbon\""
             }
         },
         {
@@ -477,14 +501,6 @@
             "tagged_values": {}
         },
         {
-            "sender": "gateway",
-            "receiver": "user",
-            "stereotypes": [
-                "restful_http"
-            ],
-            "tagged_values": {}
-        },
-        {
             "sender": "config",
             "receiver": "gateway",
             "stereotypes": [
@@ -502,8 +518,8 @@
                 "load_balanced_link"
             ],
             "tagged_values": {
-                "'Load Balancer'": "Ribbon",
-                "'Circuit Breaker'": "Hystrix"
+                "'Load Balancer'": "\"Ribbon\"",
+                " 'Circuit Breaker'": "\"Hystrix\""
             }
         },
         {
@@ -515,8 +531,8 @@
                 "load_balanced_link"
             ],
             "tagged_values": {
-                "'Load Balancer'": "Ribbon",
-                "'Circuit Breaker'": "Hystrix"
+                "'Load Balancer'": "\"Ribbon\"",
+                " 'Circuit Breaker'": "\"Hystrix\""
             }
         },
         {
@@ -528,8 +544,8 @@
                 "load_balanced_link"
             ],
             "tagged_values": {
-                "'Load Balancer'": "Ribbon",
-                "'Circuit Breaker'": "Hystrix"
+                "'Load Balancer'": "\"Ribbon\"",
+                " 'Circuit Breaker'": "\"Hystrix\""
             }
         },
         {
@@ -542,8 +558,8 @@
                 "auth_provider"
             ],
             "tagged_values": {
-                "'Load Balancer'": "Ribbon",
-                "'Circuit Breaker'": "Hystrix"
+                "'Load Balancer'": "\"Ribbon\"",
+                " 'Circuit Breaker'": "\"Hystrix\""
             }
         }
     ],
@@ -552,9 +568,7 @@
             "name": "mail_server",
             "stereotypes": [
                 "mail_server",
-                "plaintext_credentials",
-                "exitpoint",
-                "entrypoint"
+                "plaintext_credentials"
             ],
             "tagged_values": {
                 "Mail Server": "Gmail",
@@ -567,20 +581,16 @@
         {
             "name": "external_website",
             "stereotypes": [
-                "external_website",
-                "entrypoint",
-                "exitpoint"
+                "external_website"
             ],
             "tagged_values": {
-                "URL": "https"
+                "URL": "https://api.exchangeratesapi.io"
             }
         },
         {
             "name": "user",
             "stereotypes": [
-                "user_stereotype",
-                "entrypoint",
-                "exitpoint"
+                "user_stereotype"
             ],
             "tagged_values": {}
         }

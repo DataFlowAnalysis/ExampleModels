@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://www.example.org/datadictionary" id="_T2xkATLzEe--95Dk3daD3w">
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_cWwcEDXoEe-ZrPegvh3Shg">
   <labelTypes id="6" entityName="Stereotype">
     <label id="9" entityName="internal"/>
     <label id="17" entityName="web_server"/>
@@ -10,7 +10,7 @@
     <label id="26" entityName="exitpoint"/>
     <label id="32" entityName="authorization_server"/>
     <label id="33" entityName="login_attempts_regulation"/>
-    <label id="37" entityName="restful_http"/>
+    <label id="37" entityName="restfulhttp"/>
   </labelTypes>
   <labelTypes id="10" entityName="Port">
     <label id="11" entityName="11080"/>
@@ -87,9 +87,5 @@
     <assignment xsi:type="datadictionary:Assignment" id="83" outputPin="63" outputLabels="19 32 33 37">
       <term xsi:type="datadictionary:TRUE" id="84"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="91" outputPin="54"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="92" outputPin="57"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="93" outputPin="60"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="94" outputPin="63"/>
   </behaviour>
 </datadictionary:DataDictionary>

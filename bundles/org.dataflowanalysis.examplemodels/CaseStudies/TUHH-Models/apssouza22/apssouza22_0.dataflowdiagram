@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://www.example.org/dataflowdiagram" id="_TgUL0DLzEe--95Dk3daD3w">
+<dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="_dkmvQDXoEe-ZrPegvh3Shg">
   <flows id="96" entityName="admin" sourceNode="3" destinationNode="2">
     <destinationPin href="apssouza22_0.datadictionary#94"/>
     <sourcePin href="apssouza22_0.datadictionary#95"/>
@@ -88,7 +88,7 @@
     <destinationPin href="apssouza22_0.datadictionary#169"/>
     <sourcePin href="apssouza22_0.datadictionary#170"/>
   </flows>
-  <flows id="174" entityName="proxy" sourceNode="11" destinationNode="0">
+  <flows id="174" entityName="user" sourceNode="0" destinationNode="10">
     <destinationPin href="apssouza22_0.datadictionary#172"/>
     <sourcePin href="apssouza22_0.datadictionary#173"/>
   </flows>
@@ -96,66 +96,63 @@
     <destinationPin href="apssouza22_0.datadictionary#175"/>
     <sourcePin href="apssouza22_0.datadictionary#176"/>
   </flows>
-  <flows id="180" entityName="zookeeper" sourceNode="12" destinationNode="6">
-    <destinationPin href="apssouza22_0.datadictionary#178"/>
-    <sourcePin href="apssouza22_0.datadictionary#179"/>
+  <flows id="181" entityName="zookeeper" sourceNode="12" destinationNode="6">
+    <destinationPin href="apssouza22_0.datadictionary#179"/>
+    <sourcePin href="apssouza22_0.datadictionary#180"/>
   </flows>
-  <flows id="183" entityName="proxy" sourceNode="11" destinationNode="1">
-    <destinationPin href="apssouza22_0.datadictionary#181"/>
-    <sourcePin href="apssouza22_0.datadictionary#182"/>
+  <flows id="184" entityName="proxy" sourceNode="11" destinationNode="1">
+    <destinationPin href="apssouza22_0.datadictionary#182"/>
+    <sourcePin href="apssouza22_0.datadictionary#183"/>
   </flows>
-  <flows id="186" entityName="user_service" sourceNode="5" destinationNode="1">
-    <destinationPin href="apssouza22_0.datadictionary#184"/>
-    <sourcePin href="apssouza22_0.datadictionary#185"/>
+  <flows id="187" entityName="user_service" sourceNode="5" destinationNode="1">
+    <destinationPin href="apssouza22_0.datadictionary#185"/>
+    <sourcePin href="apssouza22_0.datadictionary#186"/>
   </flows>
-  <flows id="189" entityName="reminder" sourceNode="8" destinationNode="1">
-    <destinationPin href="apssouza22_0.datadictionary#187"/>
-    <sourcePin href="apssouza22_0.datadictionary#188"/>
+  <flows id="190" entityName="reminder" sourceNode="8" destinationNode="1">
+    <destinationPin href="apssouza22_0.datadictionary#188"/>
+    <sourcePin href="apssouza22_0.datadictionary#189"/>
   </flows>
-  <flows id="192" entityName="eureka_server" sourceNode="4" destinationNode="1">
-    <destinationPin href="apssouza22_0.datadictionary#190"/>
-    <sourcePin href="apssouza22_0.datadictionary#191"/>
+  <flows id="193" entityName="eureka_server" sourceNode="4" destinationNode="1">
+    <destinationPin href="apssouza22_0.datadictionary#191"/>
+    <sourcePin href="apssouza22_0.datadictionary#192"/>
   </flows>
-  <flows id="195" entityName="api_gateway" sourceNode="9" destinationNode="1">
-    <destinationPin href="apssouza22_0.datadictionary#193"/>
-    <sourcePin href="apssouza22_0.datadictionary#194"/>
+  <flows id="196" entityName="api_gateway" sourceNode="9" destinationNode="1">
+    <destinationPin href="apssouza22_0.datadictionary#194"/>
+    <sourcePin href="apssouza22_0.datadictionary#195"/>
   </flows>
-  <flows id="198" entityName="oauth" sourceNode="10" destinationNode="1">
-    <destinationPin href="apssouza22_0.datadictionary#196"/>
-    <sourcePin href="apssouza22_0.datadictionary#197"/>
+  <flows id="199" entityName="oauth" sourceNode="10" destinationNode="1">
+    <destinationPin href="apssouza22_0.datadictionary#197"/>
+    <sourcePin href="apssouza22_0.datadictionary#198"/>
   </flows>
-  <flows id="201" entityName="admin" sourceNode="3" destinationNode="1">
-    <destinationPin href="apssouza22_0.datadictionary#199"/>
-    <sourcePin href="apssouza22_0.datadictionary#200"/>
+  <flows id="202" entityName="admin" sourceNode="3" destinationNode="1">
+    <destinationPin href="apssouza22_0.datadictionary#200"/>
+    <sourcePin href="apssouza22_0.datadictionary#201"/>
   </flows>
-  <flows id="204" entityName="config_server" sourceNode="2" destinationNode="1">
-    <destinationPin href="apssouza22_0.datadictionary#202"/>
-    <sourcePin href="apssouza22_0.datadictionary#203"/>
+  <flows id="205" entityName="config_server" sourceNode="2" destinationNode="1">
+    <destinationPin href="apssouza22_0.datadictionary#203"/>
+    <sourcePin href="apssouza22_0.datadictionary#204"/>
   </flows>
-  <flows id="207" entityName="mailer" sourceNode="7" destinationNode="1">
-    <destinationPin href="apssouza22_0.datadictionary#205"/>
-    <sourcePin href="apssouza22_0.datadictionary#206"/>
+  <flows id="208" entityName="mailer" sourceNode="7" destinationNode="1">
+    <destinationPin href="apssouza22_0.datadictionary#206"/>
+    <sourcePin href="apssouza22_0.datadictionary#207"/>
   </flows>
   <nodes xsi:type="dataflowdiagram:External" id="0" entityName="user">
     <behaviour href="apssouza22_0.datadictionary#83"/>
     <properties href="apssouza22_0.datadictionary#85"/>
-    <properties href="apssouza22_0.datadictionary#86"/>
-    <properties href="apssouza22_0.datadictionary#43"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:External" id="1" entityName="logstash">
     <behaviour href="apssouza22_0.datadictionary#40"/>
     <properties href="apssouza22_0.datadictionary#42"/>
     <properties href="apssouza22_0.datadictionary#43"/>
-    <properties href="apssouza22_0.datadictionary#44"/>
-    <properties href="apssouza22_0.datadictionary#46"/>
+    <properties href="apssouza22_0.datadictionary#45"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="2" entityName="config_server">
-    <behaviour href="apssouza22_0.datadictionary#58"/>
+    <behaviour href="apssouza22_0.datadictionary#57"/>
     <properties href="apssouza22_0.datadictionary#26"/>
     <properties href="apssouza22_0.datadictionary#27"/>
     <properties href="apssouza22_0.datadictionary#21"/>
+    <properties href="apssouza22_0.datadictionary#59"/>
     <properties href="apssouza22_0.datadictionary#60"/>
-    <properties href="apssouza22_0.datadictionary#61"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="3" entityName="admin">
     <behaviour href="apssouza22_0.datadictionary#31"/>
@@ -166,25 +163,25 @@
     <properties href="apssouza22_0.datadictionary#36"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="4" entityName="eureka_server">
-    <behaviour href="apssouza22_0.datadictionary#68"/>
-    <properties href="apssouza22_0.datadictionary#70"/>
+    <behaviour href="apssouza22_0.datadictionary#67"/>
+    <properties href="apssouza22_0.datadictionary#69"/>
     <properties href="apssouza22_0.datadictionary#27"/>
     <properties href="apssouza22_0.datadictionary#21"/>
-    <properties href="apssouza22_0.datadictionary#71"/>
-    <properties href="apssouza22_0.datadictionary#73"/>
+    <properties href="apssouza22_0.datadictionary#70"/>
+    <properties href="apssouza22_0.datadictionary#72"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="5" entityName="user_service">
-    <behaviour href="apssouza22_0.datadictionary#53"/>
+    <behaviour href="apssouza22_0.datadictionary#52"/>
     <properties href="apssouza22_0.datadictionary#18"/>
     <properties href="apssouza22_0.datadictionary#21"/>
-    <properties href="apssouza22_0.datadictionary#55"/>
+    <properties href="apssouza22_0.datadictionary#54"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="6" entityName="kafka">
-    <behaviour href="apssouza22_0.datadictionary#62"/>
-    <properties href="apssouza22_0.datadictionary#64"/>
+    <behaviour href="apssouza22_0.datadictionary#61"/>
+    <properties href="apssouza22_0.datadictionary#63"/>
     <properties href="apssouza22_0.datadictionary#27"/>
+    <properties href="apssouza22_0.datadictionary#65"/>
     <properties href="apssouza22_0.datadictionary#66"/>
-    <properties href="apssouza22_0.datadictionary#67"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="mailer">
     <behaviour href="apssouza22_0.datadictionary#37"/>
@@ -199,34 +196,37 @@
     <properties href="apssouza22_0.datadictionary#23"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="9" entityName="api_gateway">
-    <behaviour href="apssouza22_0.datadictionary#74"/>
+    <behaviour href="apssouza22_0.datadictionary#73"/>
+    <properties href="apssouza22_0.datadictionary#75"/>
     <properties href="apssouza22_0.datadictionary#76"/>
     <properties href="apssouza22_0.datadictionary#77"/>
-    <properties href="apssouza22_0.datadictionary#78"/>
     <properties href="apssouza22_0.datadictionary#27"/>
-    <properties href="apssouza22_0.datadictionary#79"/>
+    <properties href="apssouza22_0.datadictionary#78"/>
     <properties href="apssouza22_0.datadictionary#21"/>
+    <properties href="apssouza22_0.datadictionary#79"/>
     <properties href="apssouza22_0.datadictionary#81"/>
     <properties href="apssouza22_0.datadictionary#82"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="10" entityName="oauth">
-    <behaviour href="apssouza22_0.datadictionary#87"/>
+    <behaviour href="apssouza22_0.datadictionary#86"/>
+    <properties href="apssouza22_0.datadictionary#88"/>
     <properties href="apssouza22_0.datadictionary#89"/>
-    <properties href="apssouza22_0.datadictionary#90"/>
     <properties href="apssouza22_0.datadictionary#27"/>
-    <properties href="apssouza22_0.datadictionary#77"/>
+    <properties href="apssouza22_0.datadictionary#76"/>
     <properties href="apssouza22_0.datadictionary#21"/>
+    <properties href="apssouza22_0.datadictionary#90"/>
+    <properties href="apssouza22_0.datadictionary#79"/>
     <properties href="apssouza22_0.datadictionary#92"/>
     <properties href="apssouza22_0.datadictionary#81"/>
     <properties href="apssouza22_0.datadictionary#93"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="11" entityName="proxy">
-    <behaviour href="apssouza22_0.datadictionary#47"/>
-    <properties href="apssouza22_0.datadictionary#49"/>
+    <behaviour href="apssouza22_0.datadictionary#46"/>
+    <properties href="apssouza22_0.datadictionary#48"/>
     <properties href="apssouza22_0.datadictionary#27"/>
     <properties href="apssouza22_0.datadictionary#21"/>
-    <properties href="apssouza22_0.datadictionary#50"/>
-    <properties href="apssouza22_0.datadictionary#52"/>
+    <properties href="apssouza22_0.datadictionary#49"/>
+    <properties href="apssouza22_0.datadictionary#51"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="12" entityName="zookeeper">
     <behaviour href="apssouza22_0.datadictionary#24"/>
@@ -236,7 +236,7 @@
     <properties href="apssouza22_0.datadictionary#30"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="13" entityName="jmx_monitoring">
-    <behaviour href="apssouza22_0.datadictionary#56"/>
+    <behaviour href="apssouza22_0.datadictionary#55"/>
     <properties href="apssouza22_0.datadictionary#18"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="14" entityName="todo_infra">

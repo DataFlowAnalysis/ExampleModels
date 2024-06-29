@@ -137,7 +137,7 @@
                 "Port": 8080,
                 "Endpoints": [
                     "/product/{productId}",
-                    "/set-Serviceing-time"
+                    "/set-processing-time"
                 ]
             }
         },
@@ -151,7 +151,7 @@
                 "Port": 8080,
                 "Endpoints": [
                     "/recommendation",
-                    "/set-Serviceing-time"
+                    "/set-processing-time"
                 ]
             }
         },
@@ -165,7 +165,7 @@
                 "Port": 8080,
                 "Endpoints": [
                     "/review",
-                    "/set-Serviceing-time"
+                    "/set-processing-time"
                 ]
             }
         },
@@ -195,7 +195,8 @@
                 "resource_server",
                 "local_logging",
                 "circuit_breaker",
-                "load_balancer"
+                "load_balancer",
+                "entrypoint"
             ],
             "tagged_values": {
                 "Port": 8765,
@@ -236,7 +237,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -246,7 +247,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -256,7 +257,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -266,7 +267,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -300,7 +301,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -326,7 +327,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -344,7 +345,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -362,7 +363,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -380,7 +381,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -390,7 +391,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -439,8 +440,8 @@
             "tagged_values": {}
         },
         {
-            "sender": "edge_server",
-            "receiver": "user",
+            "sender": "user",
+            "receiver": "edge_server",
             "stereotypes": [
                 "restful_http"
             ],
@@ -448,7 +449,7 @@
         },
         {
             "sender": "user",
-            "receiver": "edge_server",
+            "receiver": "auth_server",
             "stereotypes": [
                 "restful_http"
             ],
@@ -462,7 +463,7 @@
                 "circuit_breaker_link"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -480,7 +481,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -490,7 +491,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -508,7 +509,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -518,7 +519,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -568,7 +569,7 @@
                 "restful_http"
             ],
             "tagged_values": {
-                "Protocol": "HTTPS\""
+                "Protocol": "HTTPS"
             }
         },
         {
@@ -584,19 +585,16 @@
         {
             "name": "github_repository",
             "stereotypes": [
-                "github_repository",
-                "entrypoint"
+                "github_repository"
             ],
             "tagged_values": {
-                "URL": "https"
+                "URL": "https://github.com/callistaenterprise/blog-microservices-config"
             }
         },
         {
             "name": "user",
             "stereotypes": [
-                "user_stereotype",
-                "entrypoint",
-                "exitpoint"
+                "user_stereotype"
             ],
             "tagged_values": {}
         }

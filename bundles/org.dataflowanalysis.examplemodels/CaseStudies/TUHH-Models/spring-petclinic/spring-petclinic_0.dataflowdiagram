@@ -1,128 +1,121 @@
 <?xml version="1.0" encoding="ASCII"?>
-<dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://www.example.org/dataflowdiagram" id="_UMcSADLzEe--95Dk3daD3w">
-  <flows id="93" entityName="github_repository" sourceNode="0" destinationNode="2">
-    <destinationPin href="spring-petclinic_0.datadictionary#91"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#92"/>
+<dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="_c3HXIDXoEe-ZrPegvh3Shg">
+  <flows id="92" entityName="github_repository" sourceNode="0" destinationNode="2">
+    <destinationPin href="spring-petclinic_0.datadictionary#90"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#91"/>
   </flows>
-  <flows id="99" entityName="config_server" sourceNode="2" destinationNode="3">
-    <destinationPin href="spring-petclinic_0.datadictionary#97"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#98"/>
+  <flows id="98" entityName="config_server" sourceNode="2" destinationNode="3">
+    <destinationPin href="spring-petclinic_0.datadictionary#96"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#97"/>
   </flows>
-  <flows id="102" entityName="tracing_server" sourceNode="4" destinationNode="3">
-    <destinationPin href="spring-petclinic_0.datadictionary#100"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#101"/>
+  <flows id="101" entityName="tracing_server" sourceNode="4" destinationNode="3">
+    <destinationPin href="spring-petclinic_0.datadictionary#99"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#100"/>
   </flows>
-  <flows id="105" entityName="config_server" sourceNode="2" destinationNode="4">
-    <destinationPin href="spring-petclinic_0.datadictionary#103"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#104"/>
+  <flows id="104" entityName="config_server" sourceNode="2" destinationNode="4">
+    <destinationPin href="spring-petclinic_0.datadictionary#102"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#103"/>
   </flows>
-  <flows id="108" entityName="admin_server" sourceNode="5" destinationNode="3">
-    <destinationPin href="spring-petclinic_0.datadictionary#106"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#107"/>
+  <flows id="107" entityName="admin_server" sourceNode="5" destinationNode="3">
+    <destinationPin href="spring-petclinic_0.datadictionary#105"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#106"/>
   </flows>
-  <flows id="111" entityName="config_server" sourceNode="2" destinationNode="5">
-    <destinationPin href="spring-petclinic_0.datadictionary#109"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#110"/>
+  <flows id="110" entityName="config_server" sourceNode="2" destinationNode="5">
+    <destinationPin href="spring-petclinic_0.datadictionary#108"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#109"/>
   </flows>
-  <flows id="114" entityName="prometheus_server" sourceNode="6" destinationNode="7">
-    <destinationPin href="spring-petclinic_0.datadictionary#112"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#113"/>
+  <flows id="113" entityName="prometheus_server" sourceNode="6" destinationNode="7">
+    <destinationPin href="spring-petclinic_0.datadictionary#111"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#112"/>
   </flows>
-  <flows id="117" entityName="customers_service" sourceNode="8" destinationNode="3">
-    <destinationPin href="spring-petclinic_0.datadictionary#115"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#116"/>
+  <flows id="116" entityName="customers_service" sourceNode="8" destinationNode="3">
+    <destinationPin href="spring-petclinic_0.datadictionary#114"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#115"/>
   </flows>
-  <flows id="120" entityName="config_server" sourceNode="2" destinationNode="8">
-    <destinationPin href="spring-petclinic_0.datadictionary#118"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#119"/>
+  <flows id="119" entityName="config_server" sourceNode="2" destinationNode="8">
+    <destinationPin href="spring-petclinic_0.datadictionary#117"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#118"/>
   </flows>
-  <flows id="123" entityName="customers_service" sourceNode="8" destinationNode="4">
-    <destinationPin href="spring-petclinic_0.datadictionary#121"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#122"/>
+  <flows id="122" entityName="customers_service" sourceNode="8" destinationNode="4">
+    <destinationPin href="spring-petclinic_0.datadictionary#120"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#121"/>
   </flows>
-  <flows id="126" entityName="customers_service" sourceNode="8" destinationNode="6">
-    <destinationPin href="spring-petclinic_0.datadictionary#124"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#125"/>
+  <flows id="125" entityName="customers_service" sourceNode="8" destinationNode="6">
+    <destinationPin href="spring-petclinic_0.datadictionary#123"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#124"/>
   </flows>
-  <flows id="129" entityName="vets_service" sourceNode="9" destinationNode="3">
-    <destinationPin href="spring-petclinic_0.datadictionary#127"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#128"/>
+  <flows id="128" entityName="vets_service" sourceNode="9" destinationNode="3">
+    <destinationPin href="spring-petclinic_0.datadictionary#126"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#127"/>
   </flows>
-  <flows id="132" entityName="config_server" sourceNode="2" destinationNode="9">
-    <destinationPin href="spring-petclinic_0.datadictionary#130"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#131"/>
+  <flows id="131" entityName="config_server" sourceNode="2" destinationNode="9">
+    <destinationPin href="spring-petclinic_0.datadictionary#129"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#130"/>
   </flows>
-  <flows id="135" entityName="vets_service" sourceNode="9" destinationNode="4">
-    <destinationPin href="spring-petclinic_0.datadictionary#133"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#134"/>
+  <flows id="134" entityName="vets_service" sourceNode="9" destinationNode="4">
+    <destinationPin href="spring-petclinic_0.datadictionary#132"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#133"/>
   </flows>
-  <flows id="138" entityName="vets_service" sourceNode="9" destinationNode="6">
-    <destinationPin href="spring-petclinic_0.datadictionary#136"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#137"/>
+  <flows id="137" entityName="vets_service" sourceNode="9" destinationNode="6">
+    <destinationPin href="spring-petclinic_0.datadictionary#135"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#136"/>
   </flows>
-  <flows id="141" entityName="visits_service" sourceNode="10" destinationNode="3">
-    <destinationPin href="spring-petclinic_0.datadictionary#139"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#140"/>
+  <flows id="140" entityName="visits_service" sourceNode="10" destinationNode="3">
+    <destinationPin href="spring-petclinic_0.datadictionary#138"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#139"/>
   </flows>
-  <flows id="144" entityName="config_server" sourceNode="2" destinationNode="10">
-    <destinationPin href="spring-petclinic_0.datadictionary#142"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#143"/>
+  <flows id="143" entityName="config_server" sourceNode="2" destinationNode="10">
+    <destinationPin href="spring-petclinic_0.datadictionary#141"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#142"/>
   </flows>
-  <flows id="147" entityName="visits_service" sourceNode="10" destinationNode="4">
-    <destinationPin href="spring-petclinic_0.datadictionary#145"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#146"/>
+  <flows id="146" entityName="visits_service" sourceNode="10" destinationNode="4">
+    <destinationPin href="spring-petclinic_0.datadictionary#144"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#145"/>
   </flows>
-  <flows id="150" entityName="visits_service" sourceNode="10" destinationNode="6">
-    <destinationPin href="spring-petclinic_0.datadictionary#148"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#149"/>
+  <flows id="149" entityName="visits_service" sourceNode="10" destinationNode="6">
+    <destinationPin href="spring-petclinic_0.datadictionary#147"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#148"/>
   </flows>
-  <flows id="153" entityName="discovery_server" sourceNode="3" destinationNode="11">
-    <destinationPin href="spring-petclinic_0.datadictionary#151"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#152"/>
+  <flows id="152" entityName="discovery_server" sourceNode="3" destinationNode="11">
+    <destinationPin href="spring-petclinic_0.datadictionary#150"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#151"/>
   </flows>
-  <flows id="156" entityName="user" sourceNode="1" destinationNode="11">
-    <destinationPin href="spring-petclinic_0.datadictionary#154"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#155"/>
+  <flows id="155" entityName="user" sourceNode="1" destinationNode="11">
+    <destinationPin href="spring-petclinic_0.datadictionary#153"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#154"/>
   </flows>
-  <flows id="159" entityName="api_gateway" sourceNode="11" destinationNode="1">
-    <destinationPin href="spring-petclinic_0.datadictionary#157"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#158"/>
+  <flows id="158" entityName="config_server" sourceNode="2" destinationNode="11">
+    <destinationPin href="spring-petclinic_0.datadictionary#156"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#157"/>
   </flows>
-  <flows id="163" entityName="config_server" sourceNode="2" destinationNode="11">
-    <destinationPin href="spring-petclinic_0.datadictionary#161"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#162"/>
+  <flows id="161" entityName="api_gateway" sourceNode="11" destinationNode="6">
+    <destinationPin href="spring-petclinic_0.datadictionary#159"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#160"/>
   </flows>
-  <flows id="166" entityName="api_gateway" sourceNode="11" destinationNode="6">
-    <destinationPin href="spring-petclinic_0.datadictionary#164"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#165"/>
+  <flows id="165" entityName="api_gateway" sourceNode="11" destinationNode="9">
+    <destinationPin href="spring-petclinic_0.datadictionary#163"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#164"/>
   </flows>
-  <flows id="169" entityName="api_gateway" sourceNode="11" destinationNode="9">
-    <destinationPin href="spring-petclinic_0.datadictionary#167"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#168"/>
+  <flows id="168" entityName="api_gateway" sourceNode="11" destinationNode="10">
+    <destinationPin href="spring-petclinic_0.datadictionary#166"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#167"/>
   </flows>
-  <flows id="172" entityName="api_gateway" sourceNode="11" destinationNode="10">
-    <destinationPin href="spring-petclinic_0.datadictionary#170"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#171"/>
+  <flows id="171" entityName="api_gateway" sourceNode="11" destinationNode="8">
+    <destinationPin href="spring-petclinic_0.datadictionary#169"/>
+    <sourcePin href="spring-petclinic_0.datadictionary#170"/>
   </flows>
-  <flows id="175" entityName="api_gateway" sourceNode="11" destinationNode="8">
+  <flows id="175" entityName="api_gateway" sourceNode="11" destinationNode="4">
     <destinationPin href="spring-petclinic_0.datadictionary#173"/>
     <sourcePin href="spring-petclinic_0.datadictionary#174"/>
   </flows>
-  <flows id="179" entityName="api_gateway" sourceNode="11" destinationNode="4">
-    <destinationPin href="spring-petclinic_0.datadictionary#177"/>
-    <sourcePin href="spring-petclinic_0.datadictionary#178"/>
-  </flows>
   <nodes xsi:type="dataflowdiagram:External" id="0" entityName="github_repository">
-    <behaviour href="spring-petclinic_0.datadictionary#70"/>
-    <properties href="spring-petclinic_0.datadictionary#72"/>
+    <behaviour href="spring-petclinic_0.datadictionary#71"/>
     <properties href="spring-petclinic_0.datadictionary#73"/>
     <properties href="spring-petclinic_0.datadictionary#75"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:External" id="1" entityName="user">
     <behaviour href="spring-petclinic_0.datadictionary#81"/>
     <properties href="spring-petclinic_0.datadictionary#83"/>
-    <properties href="spring-petclinic_0.datadictionary#73"/>
-    <properties href="spring-petclinic_0.datadictionary#84"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="2" entityName="config_server">
     <behaviour href="spring-petclinic_0.datadictionary#41"/>
@@ -160,11 +153,11 @@
     <properties href="spring-petclinic_0.datadictionary#29"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="7" entityName="grafana_server">
-    <behaviour href="spring-petclinic_0.datadictionary#85"/>
-    <properties href="spring-petclinic_0.datadictionary#87"/>
+    <behaviour href="spring-petclinic_0.datadictionary#84"/>
+    <properties href="spring-petclinic_0.datadictionary#86"/>
     <properties href="spring-petclinic_0.datadictionary#26"/>
+    <properties href="spring-petclinic_0.datadictionary#88"/>
     <properties href="spring-petclinic_0.datadictionary#89"/>
-    <properties href="spring-petclinic_0.datadictionary#90"/>
   </nodes>
   <nodes xsi:type="dataflowdiagram:Process" id="8" entityName="customers_service">
     <behaviour href="spring-petclinic_0.datadictionary#30"/>
@@ -201,8 +194,9 @@
     <properties href="spring-petclinic_0.datadictionary#62"/>
     <properties href="spring-petclinic_0.datadictionary#63"/>
     <properties href="spring-petclinic_0.datadictionary#64"/>
-    <properties href="spring-petclinic_0.datadictionary#66"/>
+    <properties href="spring-petclinic_0.datadictionary#65"/>
     <properties href="spring-petclinic_0.datadictionary#67"/>
-    <properties href="spring-petclinic_0.datadictionary#69"/>
+    <properties href="spring-petclinic_0.datadictionary#68"/>
+    <properties href="spring-petclinic_0.datadictionary#70"/>
   </nodes>
 </dataflowdiagram:DataFlowDiagram>

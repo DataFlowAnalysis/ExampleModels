@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://www.example.org/datadictionary" id="_TbgkUTLzEe--95Dk3daD3w">
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_eFDw8TXoEe-ZrPegvh3Shg">
   <labelTypes id="13" entityName="Stereotype">
     <label id="16" entityName="infrastructural"/>
     <label id="17" entityName="monitoring_dashboard"/>
@@ -24,10 +24,10 @@
     <label id="97" entityName="user_stereotype"/>
     <label id="98" entityName="exitpoint"/>
     <label id="101" entityName="authorization_server"/>
-    <label id="111" entityName="restful_http"/>
-    <label id="124" entityName="plaintext_credentials_link"/>
-    <label id="174" entityName="circuit_breaker_link"/>
-    <label id="175" entityName="load_balanced_link"/>
+    <label id="111" entityName="restfulhttp"/>
+    <label id="124" entityName="plaintextcredentialslink"/>
+    <label id="174" entityName="circuitbreakerlink"/>
+    <label id="175" entityName="loadbalancedlink"/>
   </labelTypes>
   <labelTypes id="21" entityName="MonitoringDashboard">
     <label id="22" entityName="Hystrix"/>
@@ -168,7 +168,6 @@
     <assignment xsi:type="datadictionary:Assignment" id="232" outputPin="122" outputLabels="47 48 111 124 125 53">
       <term xsi:type="datadictionary:TRUE" id="233"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="288" outputPin="122"/>
   </behaviour>
   <behaviour id="54">
     <inPin id="159"/>
@@ -194,11 +193,11 @@
     <assignment xsi:type="datadictionary:Assignment" id="242" inputPins="159 162 197" outputPin="210" outputLabels="56 57 20 58 59 60 111">
       <term xsi:type="datadictionary:TRUE" id="243"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="289" inputPins="159 162 197" outputPin="157"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="290" inputPins="159 162 197" outputPin="166"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="291" inputPins="159 162 197" outputPin="169"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="292" inputPins="159 162 197" outputPin="172"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="293" inputPins="159 162 197" outputPin="210"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="288" inputPins="159 162 197" outputPin="157"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="289" inputPins="159 162 197" outputPin="166"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="290" inputPins="159 162 197" outputPin="169"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="291" inputPins="159 162 197" outputPin="172"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="292" inputPins="159 162 197" outputPin="210"/>
   </behaviour>
   <behaviour id="69">
     <inPin id="203"/>
@@ -208,7 +207,7 @@
     <assignment xsi:type="datadictionary:Assignment" id="244" inputPins="203 206 209" outputPin="201" outputLabels="16 71 111">
       <term xsi:type="datadictionary:TRUE" id="245"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="294" inputPins="203 206 209" outputPin="201"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="293" inputPins="203 206 209" outputPin="201"/>
   </behaviour>
   <behaviour id="72">
     <inPin id="138"/>
@@ -226,9 +225,9 @@
     <assignment xsi:type="datadictionary:Assignment" id="250" inputPins="138 144 194" outputPin="204" outputLabels="56 57 58 20 111">
       <term xsi:type="datadictionary:TRUE" id="251"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="295" inputPins="138 144 194" outputPin="136"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="296" inputPins="138 144 194" outputPin="142"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="297" inputPins="138 144 194" outputPin="204"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="294" inputPins="138 144 194" outputPin="136"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="295" inputPins="138 144 194" outputPin="142"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="296" inputPins="138 144 194" outputPin="204"/>
   </behaviour>
   <behaviour id="76">
     <inPin id="150"/>
@@ -245,9 +244,9 @@
     <assignment xsi:type="datadictionary:Assignment" id="256" inputPins="150 171" outputPin="207" outputLabels="56 57 58 111">
       <term xsi:type="datadictionary:TRUE" id="257"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="298" inputPins="150 171" outputPin="148"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="299" inputPins="150 171" outputPin="154"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="300" inputPins="150 171" outputPin="207"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="297" inputPins="150 171" outputPin="148"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="298" inputPins="150 171" outputPin="154"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="299" inputPins="150 171" outputPin="207"/>
   </behaviour>
   <behaviour id="81">
     <inPin id="179"/>
@@ -270,17 +269,16 @@
     <assignment xsi:type="datadictionary:Assignment" id="264" inputPins="179 182 185 191" outputPin="198" outputLabels="16 83 60 59 84 111 175 174">
       <term xsi:type="datadictionary:TRUE" id="265"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="301" inputPins="179 182 185 191" outputPin="177"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="302" inputPins="179 182 185 191" outputPin="189"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="303" inputPins="179 182 185 191" outputPin="195"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="304" inputPins="179 182 185 191" outputPin="198"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="300" inputPins="179 182 185 191" outputPin="177"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="301" inputPins="179 182 185 191" outputPin="189"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="302" inputPins="179 182 185 191" outputPin="195"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="303" inputPins="179 182 185 191" outputPin="198"/>
   </behaviour>
   <behaviour id="89">
     <outPin id="109"/>
     <assignment xsi:type="datadictionary:Assignment" id="266" outputPin="109" outputLabels="91 92 111">
       <term xsi:type="datadictionary:TRUE" id="267"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="305" outputPin="109"/>
   </behaviour>
   <behaviour id="95">
     <inPin id="176"/>
@@ -288,7 +286,7 @@
     <assignment xsi:type="datadictionary:Assignment" id="268" inputPins="176" outputPin="180" outputLabels="97 92 98 111">
       <term xsi:type="datadictionary:TRUE" id="269"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="306" inputPins="176" outputPin="180"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="304" inputPins="176" outputPin="180"/>
   </behaviour>
   <behaviour id="99">
     <inPin id="118"/>
@@ -309,9 +307,9 @@
     <assignment xsi:type="datadictionary:Assignment" id="276" inputPins="118 121" outputPin="192" outputLabels="16 101 58 20 48 111">
       <term xsi:type="datadictionary:TRUE" id="277"/>
     </assignment>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="307" inputPins="118 121" outputPin="127"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="308" inputPins="118 121" outputPin="145"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="309" inputPins="118 121" outputPin="163"/>
-    <assignment xsi:type="datadictionary:ForwardingAssignment" id="310" inputPins="118 121" outputPin="192"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="305" inputPins="118 121" outputPin="127"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="306" inputPins="118 121" outputPin="145"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="307" inputPins="118 121" outputPin="163"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="308" inputPins="118 121" outputPin="192"/>
   </behaviour>
 </datadictionary:DataDictionary>

@@ -106,11 +106,10 @@
         {
             "name": "github_repository",
             "stereotypes": [
-                "github_repository",
-                "entrypoint"
+                "github_repository"
             ],
             "tagged_values": {
-                "URL": "https"
+                "URL": "https://github.com/jferrater/ConfigData"
             }
         }
     ],
@@ -221,7 +220,7 @@
                 "circuit_breaker_link"
             ],
             "tagged_values": {
-                "'Circuit Breaker'": "Hystrix"
+                "'Circuit Breaker'": "\"Hystrix\""
             }
         },
         {
@@ -232,7 +231,7 @@
                 "circuit_breaker_link"
             ],
             "tagged_values": {
-                "'Circuit Breaker'": "Hystrix"
+                "'Circuit Breaker'": "\"Hystrix\""
             }
         },
         {
@@ -245,8 +244,8 @@
                 "circuit_breaker_link"
             ],
             "tagged_values": {
-                "'Load Balancer'": "Ribbon",
-                "'Circuit Breaker'": "Hystrix"
+                "'Load Balancer'": "\"Ribbon\"",
+                " 'Circuit Breaker'": "\"Hystrix\""
             }
         },
         {
@@ -259,8 +258,8 @@
                 "circuit_breaker_link"
             ],
             "tagged_values": {
-                "'Load Balancer'": "Ribbon",
-                "'Circuit Breaker'": "Hystrix"
+                "'Load Balancer'": "\"Ribbon\"",
+                " 'Circuit Breaker'": "\"Hystrix\""
             }
         }
     ]

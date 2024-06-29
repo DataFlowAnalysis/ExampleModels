@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://www.example.org/datadictionary" id="_TvMVUTLzEe--95Dk3daD3w">
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_d_91kTXoEe-ZrPegvh3Shg">
   <labelTypes id="8" entityName="Stereotype">
     <label id="11" entityName="monitoring_server"/>
     <label id="12" entityName="monitoring_dashboard"/>
@@ -14,7 +14,7 @@
     <label id="52" entityName="exitpoint"/>
     <label id="58" entityName="circuit_breaker"/>
     <label id="59" entityName="local_logging"/>
-    <label id="68" entityName="restful_http"/>
+    <label id="68" entityName="restfulhttp"/>
   </labelTypes>
   <labelTypes id="14" entityName="MonitoringDashboard">
     <label id="15" entityName="Hystrix"/>

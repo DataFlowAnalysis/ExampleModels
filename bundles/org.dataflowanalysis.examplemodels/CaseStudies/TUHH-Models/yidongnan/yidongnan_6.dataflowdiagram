@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://www.example.org/dataflowdiagram" id="_UTeuIDLzEe--95Dk3daD3w">
+<dataflowdiagram:DataFlowDiagram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataflowdiagram="http://dataflowanalysis.org/dfd/dataflowdiagram" id="_dXm1EDXoEe-ZrPegvh3Shg">
   <flows id="85" entityName="admin_dashboard" sourceNode="1" destinationNode="4">
     <destinationPin href="yidongnan_6.datadictionary#83"/>
     <sourcePin href="yidongnan_6.datadictionary#84"/>

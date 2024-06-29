@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://www.example.org/datadictionary" id="_T1LokTLzEe--95Dk3daD3w">
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_cZQWcTXoEe-ZrPegvh3Shg">
   <labelTypes id="7" entityName="Stereotype">
     <label id="10" entityName="internal"/>
     <label id="11" entityName="local_logging"/>
@@ -12,7 +12,7 @@
     <label id="33" entityName="user_stereotype"/>
     <label id="34" entityName="entrypoint"/>
     <label id="35" entityName="exitpoint"/>
-    <label id="42" entityName="restful_http"/>
+    <label id="42" entityName="restfulhttp"/>
   </labelTypes>
   <labelTypes id="12" entityName="Port">
     <label id="13" entityName="11080"/>
