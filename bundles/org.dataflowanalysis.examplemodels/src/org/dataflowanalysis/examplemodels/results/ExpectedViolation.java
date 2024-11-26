@@ -21,7 +21,7 @@ public class ExpectedViolation {
     }
 
     public boolean references(AbstractVertex<?> element) {
-        return false; //element.getUniqueIdentifier().equals(this.nodeID);
+        return element.getUniqueIdentifier().equals(this.nodeID);
     }
 
     public List<ExpectedCharacteristic> hasNodeCharacteristic(List<CharacteristicValue> actualCharacteristics) {
