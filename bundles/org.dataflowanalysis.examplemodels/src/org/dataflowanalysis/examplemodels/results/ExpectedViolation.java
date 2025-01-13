@@ -1,6 +1,6 @@
 package org.dataflowanalysis.examplemodels.results;
 
-import de.uka.ipd.sdq.identifier.Identifier;
+import org.dataflowanalysis.analysis.core.AbstractTransposeFlowGraph;
 import org.dataflowanalysis.analysis.core.AbstractVertex;
 import org.dataflowanalysis.analysis.core.CharacteristicValue;
 import org.dataflowanalysis.analysis.core.DataCharacteristic;
@@ -9,19 +9,21 @@ import org.dataflowanalysis.analysis.pcm.core.AbstractPCMVertex;
 import java.util.*;
 
 public class ExpectedViolation {
-    private final UUID nodeID;
+    private final int flowGraphIndex;
+    private final Identifier identifier;
     private final List<ExpectedCharacteristic> vertexCharacteristics;
     private final Map<String, List<ExpectedCharacteristic>> dataCharacteristics;
 
-    public ExpectedViolation(UUID nodeID, List<ExpectedCharacteristic> vertexCharacteristics,
+    public ExpectedViolation(int flowGraphIndex, Identifier identifier, List<ExpectedCharacteristic> vertexCharacteristics,
                              Map<String, List<ExpectedCharacteristic>> dataCharacteristics) {
-        this.nodeID = nodeID;
+        this.flowGraphIndex = flowGraphIndex;
+        this.identifier = identifier;
         this.vertexCharacteristics = vertexCharacteristics;
         this.dataCharacteristics = dataCharacteristics;
     }
 
-    public boolean references(AbstractVertex<?> element) {
-        return element.getUniqueIdentifier().equals(this.nodeID);
+    public boolean references(AbstractVertex<?> element, int flowGraphIndex) {
+        return this.identifier.matches(element) && this.flowGraphIndex == flowGraphIndex;
     }
 
     public List<ExpectedCharacteristic> hasNodeCharacteristic(List<CharacteristicValue> actualCharacteristics) {
@@ -59,7 +61,7 @@ public class ExpectedViolation {
                 .anyMatch(it -> expectedCharacteristic.characteristicLiteral().equals(it.getValueName()));
     }
 
-    public UUID getNodeID() {
-        return nodeID;
+    public Identifier getIdentifier() {
+        return identifier;
     }
 }
