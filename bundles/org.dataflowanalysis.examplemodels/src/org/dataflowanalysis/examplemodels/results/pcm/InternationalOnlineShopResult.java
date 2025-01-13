@@ -29,9 +29,9 @@ public class InternationalOnlineShopResult implements PCMExampleModelResult {
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
         return List.of(
-                new ExpectedViolation(UUID.fromString("74b8d8a8-d110-3c5a-aca0-0092db3ec931"), List.of(new ExpectedCharacteristic("ServerLocation", "nonEU")),
+                new ExpectedViolation(0, PCMIdentifier.of("_oGmXgYTjEeywmO_IpTxeAg", true), List.of(new ExpectedCharacteristic("ServerLocation", "nonEU")),
                         Map.of("userData", List.of(new ExpectedCharacteristic("DataSensitivity", "Personal")))),
-                new ExpectedViolation(UUID.fromString("f362790a-49d7-3c22-8558-7232ba02d577"), List.of(new ExpectedCharacteristic("ServerLocation", "nonEU")),
+                new ExpectedViolation(0, PCMIdentifier.of("_oGmXgYTjEeywmO_IpTxeAg", false), List.of(new ExpectedCharacteristic("ServerLocation", "nonEU")),
                         Map.of("userData", List.of(new ExpectedCharacteristic("DataSensitivity", "Personal")))));
     }
 

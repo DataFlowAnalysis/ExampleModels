@@ -35,9 +35,9 @@ public class VariableReturnResult implements PCMExampleModelResult {
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
         return List.of(
-                new ExpectedViolation(UUID.fromString("faaf62e5-405f-385c-96f1-c01d378193a6"), List.of(new ExpectedCharacteristic("AssignedRole", "User")),
+                new ExpectedViolation(0, PCMIdentifier.of("_nOhAgILtEe2YyoqaKVkqog", false), List.of(new ExpectedCharacteristic("AssignedRole", "User")),
                         Map.of("RETURN", List.of(new ExpectedCharacteristic("AssignedRole", "Admin")))),
-                new ExpectedViolation(UUID.fromString("843a03df-2250-3227-b4b2-108318912005"), List.of(new ExpectedCharacteristic("AssignedRole", "User")),
+                new ExpectedViolation(0, PCMIdentifier.of("_9M9DMoLsEe2YyoqaKVkqog", false), List.of(new ExpectedCharacteristic("AssignedRole", "User")),
                         Map.of("data", List.of(new ExpectedCharacteristic("AssignedRole", "Admin")))));
     }
 

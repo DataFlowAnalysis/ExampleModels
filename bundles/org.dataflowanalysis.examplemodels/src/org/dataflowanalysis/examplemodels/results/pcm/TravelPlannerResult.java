@@ -45,15 +45,15 @@ public class TravelPlannerResult implements PCMExampleModelResult {
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
         return List.of(
-                new ExpectedViolation(UUID.fromString("2214df8e-6d69-3738-83a2-1b91df85e9af"), List.of(new ExpectedCharacteristic("AssignedRoles", "Airline")),
+                new ExpectedViolation(0, PCMIdentifier.of("_vorK8fVeEeuMKba1Qn68bg", true), List.of(new ExpectedCharacteristic("AssignedRoles", "Airline")),
                         Map.of("flight",
                                 List.of(new ExpectedCharacteristic("GrantedRoles", "User"), new ExpectedCharacteristic("GrantedRoles", "Airline")),
                                 "ccd", List.of(new ExpectedCharacteristic("GrantedRoles", "User")))),
-                new ExpectedViolation(UUID.fromString("5bdd20eb-7450-3772-974f-87e31009847e"), List.of(new ExpectedCharacteristic("AssignedRoles", "Airline")),
+                new ExpectedViolation(0, PCMIdentifier.of("_7HCu4PViEeuMKba1Qn68bg", false), List.of(new ExpectedCharacteristic("AssignedRoles", "Airline")),
                         Map.of("flight",
                                 List.of(new ExpectedCharacteristic("GrantedRoles", "User"), new ExpectedCharacteristic("GrantedRoles", "Airline")),
                                 "ccd", List.of(new ExpectedCharacteristic("GrantedRoles", "User")))),
-                new ExpectedViolation(UUID.fromString("207639fc-5022-354e-8ffd-7b20885b469e"), List.of(new ExpectedCharacteristic("AssignedRoles", "Airline")),
+                new ExpectedViolation(0, PCMIdentifier.of("_vorK8vVeEeuMKba1Qn68bg", false), List.of(new ExpectedCharacteristic("AssignedRoles", "Airline")),
                         Map.of("flight",
                                 List.of(new ExpectedCharacteristic("GrantedRoles", "User"), new ExpectedCharacteristic("GrantedRoles", "Airline")),
                                 "ccd", List.of(new ExpectedCharacteristic("GrantedRoles", "User")), "RETURN",

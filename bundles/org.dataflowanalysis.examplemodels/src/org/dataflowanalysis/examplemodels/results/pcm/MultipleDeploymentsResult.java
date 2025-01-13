@@ -29,10 +29,10 @@ public class MultipleDeploymentsResult implements PCMExampleModelResult {
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
         return List.of(
-                new ExpectedViolation(UUID.fromString("838571d3-277b-392f-9ac4-6b4d4ceddf56"),
+                new ExpectedViolation(0, PCMIdentifier.of("_dQ568HQSEe2fd909RlIZZw", true),
                         List.of(new ExpectedCharacteristic("ServerLocation", "nonEU"), new ExpectedCharacteristic("ServerLocation", "EU")),
                         Map.of("userdata", List.of(new ExpectedCharacteristic("DataSensitivity", "Personal")))),
-                new ExpectedViolation(UUID.fromString("a9ea02e4-d182-3bb2-bf18-edae674488c7"),
+                new ExpectedViolation(0, PCMIdentifier.of("_dQ568XQSEe2fd909RlIZZw", false),
                         List.of(new ExpectedCharacteristic("ServerLocation", "nonEU"), new ExpectedCharacteristic("ServerLocation", "EU")),
                         Map.of("userdata", List.of(new ExpectedCharacteristic("DataSensitivity", "Personal")))));
     }
