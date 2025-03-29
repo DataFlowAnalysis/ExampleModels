@@ -1,6 +1,5 @@
 package org.dataflowanalysis.examplemodels.results;
 
-import org.dataflowanalysis.analysis.core.AbstractVertex;
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.examplemodels.Activator;
 import org.eclipse.core.runtime.Plugin;
@@ -26,7 +25,7 @@ public interface ExampleModelResult {
 
     String getModelName();
 
-    AnalysisConstraint getDSLConstraint();
+    List<AnalysisConstraint> getDSLConstraints();
 
     List<ExpectedViolation> getExpectedViolations();
 }

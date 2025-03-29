@@ -2,40 +2,35 @@ package org.dataflowanalysis.examplemodels.results.pcm;
 
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
-import org.dataflowanalysis.analysis.dsl.selectors.Intersection;
-import org.dataflowanalysis.analysis.dsl.variable.ConstraintVariable;
+import org.dataflowanalysis.analysis.pcm.core.seff.SEFFPCMVertex;
+import org.dataflowanalysis.analysis.pcm.core.user.UserPCMVertex;
+import org.dataflowanalysis.analysis.pcm.dsl.PCMVertexType;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 
+import java.util.ArrayList;
 import java.util.List;
 
-/**
- * TODO: This test model tests a specific feature not a integration/E2E test
- */
 public class CompositeResult implements PCMExampleModelResult {
     @Override
     public String getModelName() {
-        return "Composite";
+        return "CompositeCharacteristics";
     }
 
     @Override
-    public AnalysisConstraint getDSLConstraint() {
-        // TODO: Enter actual constraint
-        return new ConstraintDSL()
+    public List<AnalysisConstraint> getDSLConstraints() {
+        List<AnalysisConstraint> constraints = new ArrayList<>();
+        constraints.add(new ConstraintDSL()
                 .ofData()
-                .withLabel("AssignedRole", ConstraintVariable.of("grantedRoles"))
                 .neverFlows()
                 .toVertex()
-                .withCharacteristic("AssignedRole", ConstraintVariable.of("assignedRoles"))
-                .where()
-                .isNotEmpty(ConstraintVariable.of("grantedRoles"))
-                .isNotEmpty(ConstraintVariable.of("assignedRoles"))
-                .isEmpty(Intersection.of(ConstraintVariable.of("grantedRoles"), ConstraintVariable.of("assignedRoles")))
-                .create();
+                .with((vertex) -> vertex instanceof UserPCMVertex<?> && vertex.getAllVertexCharacteristics().size() != 1)
+                .with((vertex) -> vertex instanceof SEFFPCMVertex<?> && vertex.getAllVertexCharacteristics().size() != 3)
+                .create());
+        return constraints;
     }
 
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
-        // TODO: Enter violations
         return List.of();
     }
 

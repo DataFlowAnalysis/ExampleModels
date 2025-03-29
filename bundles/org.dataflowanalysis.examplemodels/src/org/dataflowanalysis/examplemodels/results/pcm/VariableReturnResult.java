@@ -18,8 +18,8 @@ public class VariableReturnResult implements PCMExampleModelResult {
     }
 
     @Override
-    public AnalysisConstraint getDSLConstraint() {
-        return new ConstraintDSL()
+    public List<AnalysisConstraint> getDSLConstraints() {
+        return List.of(new ConstraintDSL()
                 .ofData()
                 .withLabel("AssignedRole", ConstraintVariable.of("grantedRoles"))
                 .neverFlows()
@@ -29,7 +29,7 @@ public class VariableReturnResult implements PCMExampleModelResult {
                 .isNotEmpty(ConstraintVariable.of("grantedRoles"))
                 .isNotEmpty(ConstraintVariable.of("assignedRoles"))
                 .isEmpty(Intersection.of(ConstraintVariable.of("grantedRoles"), ConstraintVariable.of("assignedRoles")))
-                .create();
+                .create());
     }
 
     @Override

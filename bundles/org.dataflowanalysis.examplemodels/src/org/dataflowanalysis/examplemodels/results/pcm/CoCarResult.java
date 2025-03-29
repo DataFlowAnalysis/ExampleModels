@@ -25,19 +25,9 @@ public class CoCarResult implements PCMExampleModelResult {
     }
 
     @Override
-    public AnalysisConstraint getDSLConstraint() {
-        // TODO: Enter actual constraint
-        return new ConstraintDSL()
-                .ofData()
-                .withLabel("GrantedRoles", ConstraintVariable.of("grantedRoles"))
-                .neverFlows()
-                .toVertex()
-                .withCharacteristic("AssignedRoles", ConstraintVariable.of("assignedRoles"))
-                .where()
-                .isNotEmpty(ConstraintVariable.of("grantedRoles"))
-                .isNotEmpty(ConstraintVariable.of("assignedRoles"))
-                .isEmpty(Intersection.of(ConstraintVariable.of("grantedRoles"), ConstraintVariable.of("assignedRoles")))
-                .create();
+    public List<AnalysisConstraint> getDSLConstraints() {
+        // TODO: Does not exist
+        return List.of();
     }
 
     @Override

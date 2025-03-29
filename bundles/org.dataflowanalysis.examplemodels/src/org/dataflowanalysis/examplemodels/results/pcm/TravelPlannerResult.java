@@ -28,8 +28,8 @@ public class TravelPlannerResult implements PCMExampleModelResult {
     }
 
     @Override
-    public AnalysisConstraint getDSLConstraint() {
-        return new ConstraintDSL()
+    public List<AnalysisConstraint> getDSLConstraints() {
+        return List.of(new ConstraintDSL()
                 .ofData()
                 .withLabel("GrantedRoles", ConstraintVariable.of("grantedRoles"))
                 .neverFlows()
@@ -39,7 +39,7 @@ public class TravelPlannerResult implements PCMExampleModelResult {
                 .isNotEmpty(ConstraintVariable.of("grantedRoles"))
                 .isNotEmpty(ConstraintVariable.of("assignedRoles"))
                 .isEmpty(Intersection.of(ConstraintVariable.of("grantedRoles"), ConstraintVariable.of("assignedRoles")))
-                .create();
+                .create());
     }
 
     @Override

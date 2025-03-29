@@ -6,6 +6,7 @@ import org.dataflowanalysis.analysis.dsl.selectors.Intersection;
 import org.dataflowanalysis.analysis.dsl.variable.ConstraintVariable;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 
+import java.util.ArrayList;
 import java.util.List;
 public class CoronaWarnAppResult implements PCMExampleModelResult {
     @Override
@@ -19,24 +20,26 @@ public class CoronaWarnAppResult implements PCMExampleModelResult {
     }
 
     @Override
-    public AnalysisConstraint getDSLConstraint() {
-        // TODO: Enter actual constraint
-        return new ConstraintDSL()
+    public List<AnalysisConstraint> getDSLConstraints() {
+        // TODO: This are not even good constraints...
+        List<AnalysisConstraint> constraints = new ArrayList<>();
+        constraints.add(new ConstraintDSL()
                 .ofData()
-                .withLabel("GrantedRoles", ConstraintVariable.of("grantedRoles"))
                 .neverFlows()
                 .toVertex()
-                .withCharacteristic("AssignedRoles", ConstraintVariable.of("assignedRoles"))
-                .where()
-                .isNotEmpty(ConstraintVariable.of("grantedRoles"))
-                .isNotEmpty(ConstraintVariable.of("assignedRoles"))
-                .isEmpty(Intersection.of(ConstraintVariable.of("grantedRoles"), ConstraintVariable.of("assignedRoles")))
-                .create();
+                .withCharacteristic("Location", "IllegalLocation")
+                .create());
+        constraints.add(new ConstraintDSL()
+                .ofData()
+                .withLabel("Status", "Leaked")
+                .neverFlows()
+                .toVertex()
+                .create());
+        return constraints;
     }
 
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
-        // TODO: Enter actual expected violations (should this be per constraint?)
         return List.of();
     }
 

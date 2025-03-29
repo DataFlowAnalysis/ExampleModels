@@ -6,6 +6,7 @@ import org.dataflowanalysis.analysis.dsl.selectors.Intersection;
 import org.dataflowanalysis.analysis.dsl.variable.ConstraintVariable;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MaaSTicketSystemResult implements PCMExampleModelResult {
@@ -25,24 +26,33 @@ public class MaaSTicketSystemResult implements PCMExampleModelResult {
     }
 
     @Override
-    public AnalysisConstraint getDSLConstraint() {
-        // TODO: Enter actual constraint
-        // TODO: What are the actual constraints here?
-        return new ConstraintDSL()
-                .ofData()
-                .withLabel("GrantedRoles", ConstraintVariable.of("grantedRoles"))
+    public List<AnalysisConstraint> getDSLConstraints() {
+        List<AnalysisConstraint> constraints = new ArrayList<>();
+        constraints.add(new ConstraintDSL()
+                .fromNode()
                 .neverFlows()
                 .toVertex()
-                .withCharacteristic("AssignedRoles", ConstraintVariable.of("assignedRoles"))
-                .where()
-                .isNotEmpty(ConstraintVariable.of("grantedRoles"))
-                .isNotEmpty(ConstraintVariable.of("assignedRoles"))
-                .isEmpty(Intersection.of(ConstraintVariable.of("grantedRoles"), ConstraintVariable.of("assignedRoles")))
-                .create();
+                .withCharacteristic("Role", "MaliciousActor")
+                .create());
+        constraints.add(new ConstraintDSL()
+                .ofData()
+                .withLabel("DataType", "LoginData")
+                .neverFlows()
+                .toVertex()
+                .withCharacteristic("Role", "Customer")
+                .create());
+        constraints.add(new ConstraintDSL()
+                .ofData()
+                .withLabel("Origin", "Leaked")
+                .neverFlows()
+                .toVertex()
+                .create());
+        return constraints;
     }
 
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
+        // TODO: Enter violations
         return List.of();
     }
 
