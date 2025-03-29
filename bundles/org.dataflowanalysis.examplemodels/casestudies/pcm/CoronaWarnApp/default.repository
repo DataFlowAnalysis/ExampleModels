@@ -38,8 +38,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_5ARegLd9Ee2lCsB2iGU-8w">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_5ARegbd9Ee2lCsB2iGU-8w"/>
           </variableCharacterisation_VariableUsage>
@@ -286,8 +286,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_02urkrkEEe25g4oGy4Jxtw">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@2"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@2"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_02urk7kEEe25g4oGy4Jxtw"/>
           </variableCharacterisation_VariableUsage>
@@ -354,8 +354,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_use6YrkFEe25g4oGy4Jxtw">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@2"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@2"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_use6Y7kFEe25g4oGy4Jxtw"/>
           </variableCharacterisation_VariableUsage>
@@ -443,16 +443,16 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_U4rpQLdREe2lCsB2iGU-8w">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@1"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@1"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_U4rpQbdREe2lCsB2iGU-8w"/>
           </variableCharacterisation_VariableUsage>
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_U4rpQrdREe2lCsB2iGU-8w">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_U4rpQ7dREe2lCsB2iGU-8w"/>
           </variableCharacterisation_VariableUsage>
@@ -476,8 +476,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="__LhoILdKEe2lCsB2iGU-8w">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="__LhoIbdKEe2lCsB2iGU-8w"/>
           </variableCharacterisation_VariableUsage>
@@ -500,8 +500,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_sOJJQrdQEe2lCsB2iGU-8w">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@1"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@1"/>
             </lhs>
             <rhs xsi:type="expressions:False" id="_sOJJQ7dQEe2lCsB2iGU-8w"/>
           </variableCharacterisation_VariableUsage>
@@ -525,16 +525,16 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_PMaC8LdREe2lCsB2iGU-8w">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@1"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@1"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_PMaC8bdREe2lCsB2iGU-8w"/>
           </variableCharacterisation_VariableUsage>
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_PMaC8rdREe2lCsB2iGU-8w">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_PMaC87dREe2lCsB2iGU-8w"/>
           </variableCharacterisation_VariableUsage>
@@ -718,8 +718,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_JjUI8LdQEe2lCsB2iGU-8w">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_JjUI8bdQEe2lCsB2iGU-8w"/>
           </variableCharacterisation_VariableUsage>
@@ -744,8 +744,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_u7EAYbmyEe2dIMSi7oNVYQ">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_u7EAYrmyEe2dIMSi7oNVYQ"/>
           </variableCharacterisation_VariableUsage>
@@ -765,8 +765,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_zB1ocLmyEe2dIMSi7oNVYQ">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_zB1ocbmyEe2dIMSi7oNVYQ"/>
           </variableCharacterisation_VariableUsage>
@@ -782,8 +782,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="__8F4YLmyEe2dIMSi7oNVYQ">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="__8F4YbmyEe2dIMSi7oNVYQ"/>
           </variableCharacterisation_VariableUsage>
@@ -937,8 +937,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_DUvu4Lm2Ee2dIMSi7oNVYQ">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@3"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@3.literals@0"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@3"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@3.literals@0"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_DUvu4bm2Ee2dIMSi7oNVYQ"/>
           </variableCharacterisation_VariableUsage>
@@ -1015,8 +1015,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_YkqMwLm3Ee2dIMSi7oNVYQ">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@3"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@3.literals@0"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@3"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@3.literals@0"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_YkqMwbm3Ee2dIMSi7oNVYQ"/>
           </variableCharacterisation_VariableUsage>
@@ -1083,8 +1083,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_jP6cQLm8Ee2dIMSi7oNVYQ">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@3"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@3.literals@0"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@3"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@3.literals@0"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_jP6cQbm8Ee2dIMSi7oNVYQ"/>
           </variableCharacterisation_VariableUsage>
@@ -1100,8 +1100,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_sHSe5bm3Ee2dIMSi7oNVYQ">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@3"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@3.literals@0"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@3"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@3.literals@0"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_sHSe5rm3Ee2dIMSi7oNVYQ"/>
           </variableCharacterisation_VariableUsage>
@@ -1399,8 +1399,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_EsXbZrmxEe2dIMSi7oNVYQ">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_EsXbZ7mxEe2dIMSi7oNVYQ"/>
           </variableCharacterisation_VariableUsage>
@@ -1439,16 +1439,16 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_Y4hHcrm4Ee2dIMSi7oNVYQ">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@3"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@3.literals@0"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@3"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@3.literals@0"/>
             </lhs>
             <rhs xsi:type="expressions:False" id="_Y4hHc7m4Ee2dIMSi7oNVYQ"/>
           </variableCharacterisation_VariableUsage>
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_Y4hHdLm4Ee2dIMSi7oNVYQ">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@3"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@3.literals@1"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@3"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@3.literals@1"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_Y4hHdbm4Ee2dIMSi7oNVYQ"/>
           </variableCharacterisation_VariableUsage>
@@ -1479,8 +1479,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_rAoQcLnFEe2hSdAxtFJKiA">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_rAoQcbnFEe2hSdAxtFJKiA"/>
           </variableCharacterisation_VariableUsage>
@@ -1503,8 +1503,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_1rLHkLnFEe2hSdAxtFJKiA">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_1rLHkbnFEe2hSdAxtFJKiA"/>
           </variableCharacterisation_VariableUsage>
@@ -1527,8 +1527,8 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_JkkT4LnGEe2hSdAxtFJKiA">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_JkkT4bnGEe2hSdAxtFJKiA"/>
           </variableCharacterisation_VariableUsage>
@@ -1551,16 +1551,16 @@
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_RlFqMLnFEe2hSdAxtFJKiA">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@4"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_RlFqMbnFEe2hSdAxtFJKiA"/>
           </variableCharacterisation_VariableUsage>
           <variableCharacterisation_VariableUsage xsi:type="confidentiality:ConfidentialityVariableCharacterisation">
             <specification_VariableCharacterisation specification="false"/>
             <lhs xsi:type="expression:LhsEnumCharacteristicReference" id="_RlFqMrnFEe2hSdAxtFJKiA">
-              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
-              <literal href="cwa.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@1"/>
+              <characteristicType xsi:type="DataDictionaryCharacterized:EnumCharacteristicType" href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicTypes@2"/>
+              <literal href="default.pddc#_ZSNvMLHIEe2fRLFFhL_FWA-characteristicEnumerations@2.literals@1"/>
             </lhs>
             <rhs xsi:type="expressions:True" id="_RlFqM7nFEe2hSdAxtFJKiA"/>
           </variableCharacterisation_VariableUsage>

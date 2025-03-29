@@ -13,15 +13,9 @@ public class SimpleOnlineShopResult implements DFDExampleModelResult {
     }
 
     @Override
-    public AnalysisConstraint getDSLConstraint() {
+    public List<AnalysisConstraint> getDSLConstraints() {
         // TODO: Enter actual constraint
-        return new ConstraintDSL()
-                .ofData()
-                .withLabel("DataSensitivity", "Personal")
-                .neverFlows()
-                .toVertex()
-                .withCharacteristic("ServerLocation", "nonEU")
-                .create();
+        return List.of();
     }
 
     @Override

@@ -16,14 +16,14 @@ public class InternationalOnlineShopResult implements PCMExampleModelResult {
     }
 
     @Override
-    public AnalysisConstraint getDSLConstraint() {
-        return new ConstraintDSL()
+    public List<AnalysisConstraint> getDSLConstraints() {
+        return List.of(new ConstraintDSL()
                 .ofData()
                 .withLabel("DataSensitivity", "Personal")
                 .neverFlows()
                 .toVertex()
                 .withCharacteristic("ServerLocation", "nonEU")
-                .create();
+                .create());
     }
 
     @Override

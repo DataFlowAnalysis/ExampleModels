@@ -4,9 +4,12 @@ import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
 import org.dataflowanalysis.analysis.dsl.selectors.Intersection;
 import org.dataflowanalysis.analysis.dsl.variable.ConstraintVariable;
+import org.dataflowanalysis.analysis.pcm.dsl.PCMVertexType;
+import org.dataflowanalysis.examplemodels.results.ExpectedCharacteristic;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * TODO: This test model tests a specific feature not a integration/E2E test
@@ -18,25 +21,20 @@ public class IgnoredNodesResult implements PCMExampleModelResult {
     }
 
     @Override
-    public AnalysisConstraint getDSLConstraint() {
-        // TODO: Enter actual constraint
-        return new ConstraintDSL()
-                .ofData()
-                .withLabel("AssignedRole", ConstraintVariable.of("grantedRoles"))
+    public List<AnalysisConstraint> getDSLConstraints() {
+        return List.of(new ConstraintDSL()
+                .fromNode()
+                .withType(PCMVertexType.CALLING)
+                .withType(PCMVertexType.USER)
                 .neverFlows()
                 .toVertex()
-                .withCharacteristic("AssignedRole", ConstraintVariable.of("assignedRoles"))
-                .where()
-                .isNotEmpty(ConstraintVariable.of("grantedRoles"))
-                .isNotEmpty(ConstraintVariable.of("assignedRoles"))
-                .isEmpty(Intersection.of(ConstraintVariable.of("grantedRoles"), ConstraintVariable.of("assignedRoles")))
-                .create();
+                .with((node) -> !node.getAllDataCharacteristics().isEmpty())
+                .create());
     }
 
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
-        // TODO: Enter violations
-        return List.of();
+        return List.of(new ExpectedViolation(0, new PCMIdentifier("_LTpZcKpIEe6ICOKQQaQogw"), List.of(), Map.of("RETURN", List.of(new ExpectedCharacteristic("DataVisibility", "User")))));
     }
 
     @Override
