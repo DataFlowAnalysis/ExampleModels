@@ -14,13 +14,13 @@ public class SimpleLoopResult implements DFDExampleModelResult {
 
     @Override
     public List<AnalysisConstraint> getDSLConstraints() {
-        // TODO: Enter actual constraint
+        // TODO: Has no constraints
         return List.of();
     }
 
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
-        // TODO: Enter actual violations
+        // TODO: Has no constraints; Therefore no expected violations
         return List.of();
     }
 

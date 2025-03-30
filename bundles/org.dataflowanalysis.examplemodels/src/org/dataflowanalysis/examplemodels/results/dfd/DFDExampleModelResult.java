@@ -10,6 +10,6 @@ public interface DFDExampleModelResult extends ExampleModelResult {
     }
 
     default String getDataDictionary() {
-        return Paths.get(this.getBaseFolderName(), "pcm", this.getModelName(), String.format("%s.datadictionary", this.getFileName())).toString();
+        return Paths.get(this.getBaseFolderName(), "dfd", this.getModelName(), String.format("%s.datadictionary", this.getFileName())).toString();
     }
 }

@@ -14,13 +14,16 @@ public class BranchingResult implements DFDExampleModelResult {
 
     @Override
     public List<AnalysisConstraint> getDSLConstraints() {
-        // TODO: Enter actual constraint
-        return List.of();
+        return List.of(new ConstraintDSL()
+                .ofData()
+                .neverFlows()
+                .toVertex()
+                .with((vertex) -> vertex.getAllVertexCharacteristics().isEmpty())
+                .create());
     }
 
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
-        // TODO: Enter actual violations
         return List.of();
     }
 

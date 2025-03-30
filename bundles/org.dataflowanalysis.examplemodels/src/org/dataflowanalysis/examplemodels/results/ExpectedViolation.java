@@ -1,10 +1,8 @@
 package org.dataflowanalysis.examplemodels.results;
 
-import org.dataflowanalysis.analysis.core.AbstractTransposeFlowGraph;
 import org.dataflowanalysis.analysis.core.AbstractVertex;
 import org.dataflowanalysis.analysis.core.CharacteristicValue;
 import org.dataflowanalysis.analysis.core.DataCharacteristic;
-import org.dataflowanalysis.analysis.pcm.core.AbstractPCMVertex;
 
 import java.util.*;
 
@@ -28,7 +26,12 @@ public class ExpectedViolation {
 
     public List<ExpectedCharacteristic> hasNodeCharacteristic(List<CharacteristicValue> actualCharacteristics) {
         return this.vertexCharacteristics.stream().filter(it -> !this.hasCharacteristicValue(it, actualCharacteristics)).toList();
+    }
 
+    public List<CharacteristicValue> hasIncorrectNodeCharacteristics(List<CharacteristicValue> actualCharacteristics) {
+        return actualCharacteristics.stream()
+                .filter(it -> !this.hasExpectedCharacteristic(this.vertexCharacteristics, it))
+                .toList();
     }
 
     public Map<String, List<ExpectedCharacteristic>> hasDataCharacteristics(List<DataCharacteristic> actualDataCharacteristics) {
@@ -55,10 +58,40 @@ public class ExpectedViolation {
         return missingDataCharacteristics;
     }
 
+    public Map<String, List<CharacteristicValue>> hasMissingDataCharacteristics(List<DataCharacteristic> actualDataCharacteristics) {
+        Map<String, List<CharacteristicValue>> missingDataCharacteristics = new HashMap<>();
+        for (var actualDataCharacteristic : actualDataCharacteristics) {
+            Optional<List<ExpectedCharacteristic>> expectedCharacteristics = this.dataCharacteristics.entrySet().stream()
+                    .filter(it -> it.getKey().equals(actualDataCharacteristic.getVariableName()))
+                    .map(Map.Entry::getValue)
+                    .findAny();
+            if (expectedCharacteristics.isEmpty()) {
+                missingDataCharacteristics.put(actualDataCharacteristic.getVariableName(), actualDataCharacteristic.getAllCharacteristics());
+                continue;
+            }
+            List<CharacteristicValue> incorrectCharacteristics = new ArrayList<>();
+            for (var actualCharacteristic : actualDataCharacteristic.getAllCharacteristics()) {
+                if (!this.hasExpectedCharacteristic(expectedCharacteristics.get(), actualCharacteristic)) {
+                    incorrectCharacteristics.add(actualCharacteristic);
+                }
+            }
+            if (!incorrectCharacteristics.isEmpty()) {
+                missingDataCharacteristics.put(actualDataCharacteristic.getVariableName(), incorrectCharacteristics);
+            }
+        }
+        return missingDataCharacteristics;
+    }
+
     private boolean hasCharacteristicValue(ExpectedCharacteristic expectedCharacteristic, List<CharacteristicValue> actualCharacteristics) {
         return actualCharacteristics.stream()
                 .filter(it -> expectedCharacteristic.characteristicType().equals(it.getTypeName()))
                 .anyMatch(it -> expectedCharacteristic.characteristicLiteral().equals(it.getValueName()));
+    }
+
+    private boolean hasExpectedCharacteristic(List<ExpectedCharacteristic> expectedCharacteristics, CharacteristicValue actualCharacteristic) {
+        return expectedCharacteristics.stream()
+                .filter(it -> it.characteristicType().equals(actualCharacteristic.getTypeName()))
+                .anyMatch(it -> it.characteristicLiteral().equals(actualCharacteristic.getValueName()));
     }
 
     public Identifier getIdentifier() {
