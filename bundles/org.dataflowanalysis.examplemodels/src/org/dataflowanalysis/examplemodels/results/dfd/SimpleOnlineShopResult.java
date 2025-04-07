@@ -10,6 +10,11 @@ import java.util.Map;
 
 public class SimpleOnlineShopResult implements DFDExampleModelResult {
     @Override
+    public String getBaseFolderName() {
+        return "scenarios";
+    }
+
+    @Override
     public String getModelName() {
         return "SimpleOnlineShop";
     }
