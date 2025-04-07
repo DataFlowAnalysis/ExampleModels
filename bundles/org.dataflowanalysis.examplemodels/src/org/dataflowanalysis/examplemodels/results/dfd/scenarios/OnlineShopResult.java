@@ -1,9 +1,11 @@
-package org.dataflowanalysis.examplemodels.results.dfd;
+package org.dataflowanalysis.examplemodels.results.dfd.scenarios;
 
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
 import org.dataflowanalysis.examplemodels.results.ExpectedCharacteristic;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
+import org.dataflowanalysis.examplemodels.results.dfd.DFDExampleModelResult;
+import org.dataflowanalysis.examplemodels.results.dfd.DFDIdentifier;
 
 import java.util.List;
 import java.util.Map;

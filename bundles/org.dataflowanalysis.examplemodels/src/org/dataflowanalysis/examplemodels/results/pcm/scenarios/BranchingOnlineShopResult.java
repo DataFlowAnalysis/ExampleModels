@@ -1,24 +1,29 @@
-package org.dataflowanalysis.examplemodels.results.dfd;
+package org.dataflowanalysis.examplemodels.results.pcm.scenarios;
 
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
+import org.dataflowanalysis.examplemodels.results.pcm.PCMExampleModelResult;
 
 import java.util.List;
 
-public class BranchingResult implements DFDExampleModelResult {
+public class BranchingOnlineShopResult implements PCMExampleModelResult {
+    @Override
+    public String getBaseFolderName() {
+        return "scenarios";
+    }
     @Override
     public String getModelName() {
-        return "Branching";
+        return "BranchingOnlineShop";
     }
-
     @Override
     public List<AnalysisConstraint> getDSLConstraints() {
         return List.of(new ConstraintDSL()
                 .ofData()
+                .withLabel("DataSensitivity", "Personal")
                 .neverFlows()
                 .toVertex()
-                .with((vertex) -> vertex.getAllVertexCharacteristics().isEmpty())
+                .withCharacteristic("ServerLocation", "nonEU")
                 .create());
     }
 

@@ -1,26 +1,30 @@
-package org.dataflowanalysis.examplemodels.results.dfd;
+package org.dataflowanalysis.examplemodels.results.dfd.models;
 
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
+import org.dataflowanalysis.examplemodels.results.dfd.DFDExampleModelResult;
 
 import java.util.List;
 
-public class MinimalResult   implements DFDExampleModelResult {
+public class BranchingResult implements DFDExampleModelResult {
     @Override
     public String getModelName() {
-        return "Minimal";
+        return "Branching";
     }
 
     @Override
     public List<AnalysisConstraint> getDSLConstraints() {
-        // TODO: Has no constraints
-        return List.of();
+        return List.of(new ConstraintDSL()
+                .ofData()
+                .neverFlows()
+                .toVertex()
+                .with((vertex) -> vertex.getAllVertexCharacteristics().isEmpty())
+                .create());
     }
 
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
-        // TODO: Has no constraints; Therefore no expected violations
         return List.of();
     }
 

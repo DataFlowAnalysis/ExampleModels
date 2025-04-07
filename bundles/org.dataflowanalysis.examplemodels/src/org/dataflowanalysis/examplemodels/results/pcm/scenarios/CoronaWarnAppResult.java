@@ -1,15 +1,13 @@
-package org.dataflowanalysis.examplemodels.results.pcm;
+package org.dataflowanalysis.examplemodels.results.pcm.scenarios;
 
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
-import org.dataflowanalysis.analysis.dsl.selectors.Intersection;
-import org.dataflowanalysis.analysis.dsl.variable.ConstraintVariable;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
+import org.dataflowanalysis.examplemodels.results.pcm.PCMExampleModelResult;
 
 import java.util.ArrayList;
 import java.util.List;
-
-public class MaaSTicketSystemResult implements PCMExampleModelResult {
+public class CoronaWarnAppResult implements PCMExampleModelResult {
     @Override
     public String getBaseFolderName() {
         return "scenarios";
@@ -17,33 +15,21 @@ public class MaaSTicketSystemResult implements PCMExampleModelResult {
 
     @Override
     public String getModelName() {
-        return "MaaSTicketSystem";
-    }
-
-    @Override
-    public String getFileName() {
-        return "MaaS";
+        return "CoronaWarnApp";
     }
 
     @Override
     public List<AnalysisConstraint> getDSLConstraints() {
         List<AnalysisConstraint> constraints = new ArrayList<>();
         constraints.add(new ConstraintDSL()
-                .fromNode()
+                .ofData()
                 .neverFlows()
                 .toVertex()
-                .withCharacteristic("Role", "MaliciousActor")
+                .withCharacteristic("Location", "IllegalLocation")
                 .create());
         constraints.add(new ConstraintDSL()
                 .ofData()
-                .withLabel("DataType", "LoginData")
-                .neverFlows()
-                .toVertex()
-                .withCharacteristic("Role", "Customer")
-                .create());
-        constraints.add(new ConstraintDSL()
-                .ofData()
-                .withLabel("Origin", "Leaked")
+                .withLabel("Status", "Leaked")
                 .neverFlows()
                 .toVertex()
                 .create());
@@ -52,7 +38,6 @@ public class MaaSTicketSystemResult implements PCMExampleModelResult {
 
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
-        // TODO: Enter violations
         return List.of();
     }
 

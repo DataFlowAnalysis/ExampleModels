@@ -1,13 +1,14 @@
-package org.dataflowanalysis.examplemodels.results.pcm;
+package org.dataflowanalysis.examplemodels.results.pcm.scenarios;
 
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
 import org.dataflowanalysis.examplemodels.results.ExpectedCharacteristic;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
+import org.dataflowanalysis.examplemodels.results.pcm.PCMExampleModelResult;
+import org.dataflowanalysis.examplemodels.results.pcm.PCMIdentifier;
 
 import java.util.List;
 import java.util.Map;
-import java.util.UUID;
 
 public class InternationalOnlineShopResult implements PCMExampleModelResult {
     @Override

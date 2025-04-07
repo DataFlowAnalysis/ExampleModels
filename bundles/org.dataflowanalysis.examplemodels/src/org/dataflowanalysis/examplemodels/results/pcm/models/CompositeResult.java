@@ -1,11 +1,11 @@
-package org.dataflowanalysis.examplemodels.results.pcm;
+package org.dataflowanalysis.examplemodels.results.pcm.models;
 
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
 import org.dataflowanalysis.analysis.pcm.core.seff.SEFFPCMVertex;
 import org.dataflowanalysis.analysis.pcm.core.user.UserPCMVertex;
-import org.dataflowanalysis.analysis.pcm.dsl.PCMVertexType;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
+import org.dataflowanalysis.examplemodels.results.pcm.PCMExampleModelResult;
 
 import java.util.ArrayList;
 import java.util.List;

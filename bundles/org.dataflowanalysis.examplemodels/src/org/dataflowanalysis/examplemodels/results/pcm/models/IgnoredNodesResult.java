@@ -1,19 +1,16 @@
-package org.dataflowanalysis.examplemodels.results.pcm;
+package org.dataflowanalysis.examplemodels.results.pcm.models;
 
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
-import org.dataflowanalysis.analysis.dsl.selectors.Intersection;
-import org.dataflowanalysis.analysis.dsl.variable.ConstraintVariable;
 import org.dataflowanalysis.analysis.pcm.dsl.PCMVertexType;
 import org.dataflowanalysis.examplemodels.results.ExpectedCharacteristic;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
+import org.dataflowanalysis.examplemodels.results.pcm.PCMExampleModelResult;
+import org.dataflowanalysis.examplemodels.results.pcm.PCMIdentifier;
 
 import java.util.List;
 import java.util.Map;
 
-/**
- * TODO: This test model tests a specific feature not a integration/E2E test
- */
 public class IgnoredNodesResult implements PCMExampleModelResult {
     @Override
     public String getModelName() {
