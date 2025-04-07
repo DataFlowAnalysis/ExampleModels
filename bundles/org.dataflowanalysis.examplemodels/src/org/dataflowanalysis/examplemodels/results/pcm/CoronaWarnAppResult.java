@@ -11,7 +11,7 @@ import java.util.List;
 public class CoronaWarnAppResult implements PCMExampleModelResult {
     @Override
     public String getBaseFolderName() {
-        return "casestudies";
+        return "scenarios";
     }
 
     @Override
@@ -21,7 +21,6 @@ public class CoronaWarnAppResult implements PCMExampleModelResult {
 
     @Override
     public List<AnalysisConstraint> getDSLConstraints() {
-        // TODO: This are not even good constraints...
         List<AnalysisConstraint> constraints = new ArrayList<>();
         constraints.add(new ConstraintDSL()
                 .ofData()

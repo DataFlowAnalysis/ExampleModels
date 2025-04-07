@@ -12,7 +12,7 @@ import java.util.List;
 public class MaaSTicketSystemResult implements PCMExampleModelResult {
     @Override
     public String getBaseFolderName() {
-        return "casestudies";
+        return "scenarios";
     }
 
     @Override

@@ -11,9 +11,6 @@ import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * TODO: This test model tests a specific feature not a integration/E2E test
- */
 public class NodeCharacteristicsResult implements PCMExampleModelResult {
     @Override
     public String getModelName() {

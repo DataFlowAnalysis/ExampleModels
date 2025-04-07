@@ -11,6 +11,11 @@ import java.util.UUID;
 
 public class InternationalOnlineShopResult implements PCMExampleModelResult {
     @Override
+    public String getBaseFolderName() {
+        return "scenarios";
+    }
+
+    @Override
     public String getModelName() {
         return "InternationalOnlineShop";
     }

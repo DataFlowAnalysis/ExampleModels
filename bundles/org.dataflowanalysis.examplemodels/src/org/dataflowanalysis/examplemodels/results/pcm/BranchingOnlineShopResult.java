@@ -8,6 +8,10 @@ import java.util.List;
 
 public class BranchingOnlineShopResult implements PCMExampleModelResult {
     @Override
+    public String getBaseFolderName() {
+        return "scenarios";
+    }
+    @Override
     public String getModelName() {
         return "BranchingOnlineShop";
     }

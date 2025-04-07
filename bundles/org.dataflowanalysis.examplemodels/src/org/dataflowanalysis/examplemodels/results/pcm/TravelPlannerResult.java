@@ -14,7 +14,7 @@ import java.util.UUID;
 public class TravelPlannerResult implements PCMExampleModelResult {
     @Override
     public String getBaseFolderName() {
-        return "casestudies";
+        return "scenarios";
     }
 
     @Override

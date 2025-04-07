@@ -11,7 +11,7 @@ import java.util.List;
 public class CoCarResult implements PCMExampleModelResult {
     @Override
     public String getBaseFolderName() {
-        return "casestudies";
+        return "scenarios";
     }
 
     @Override
