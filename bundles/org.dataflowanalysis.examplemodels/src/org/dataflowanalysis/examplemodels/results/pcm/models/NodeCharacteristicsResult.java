@@ -1,14 +1,13 @@
 package org.dataflowanalysis.examplemodels.results.pcm.models;
 
+import java.util.ArrayList;
+import java.util.List;
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
 import org.dataflowanalysis.analysis.pcm.core.seff.SEFFPCMVertex;
 import org.dataflowanalysis.analysis.pcm.core.user.UserPCMVertex;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 import org.dataflowanalysis.examplemodels.results.pcm.PCMExampleModelResult;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class NodeCharacteristicsResult implements PCMExampleModelResult {
     @Override
@@ -19,12 +18,13 @@ public class NodeCharacteristicsResult implements PCMExampleModelResult {
     @Override
     public List<AnalysisConstraint> getDSLConstraints() {
         List<AnalysisConstraint> constraints = new ArrayList<>();
-        constraints.add(new ConstraintDSL()
-                .ofData()
+        constraints.add(new ConstraintDSL().ofData()
                 .neverFlows()
                 .toVertex()
-                .with((vertex) -> vertex instanceof UserPCMVertex<?> && vertex.getAllVertexCharacteristics().size() != 1)
-                .with((vertex) -> vertex instanceof SEFFPCMVertex<?> && vertex.getAllVertexCharacteristics().size() != 2)
+                .with((vertex) -> vertex instanceof UserPCMVertex<?> && vertex.getAllVertexCharacteristics()
+                        .size() != 1)
+                .with((vertex) -> vertex instanceof SEFFPCMVertex<?> && vertex.getAllVertexCharacteristics()
+                        .size() != 2)
                 .create());
         return constraints;
     }

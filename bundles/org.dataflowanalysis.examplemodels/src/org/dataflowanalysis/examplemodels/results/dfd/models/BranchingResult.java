@@ -1,11 +1,10 @@
 package org.dataflowanalysis.examplemodels.results.dfd.models;
 
+import java.util.List;
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 import org.dataflowanalysis.examplemodels.results.dfd.DFDExampleModelResult;
-
-import java.util.List;
 
 public class BranchingResult implements DFDExampleModelResult {
     @Override
@@ -15,11 +14,11 @@ public class BranchingResult implements DFDExampleModelResult {
 
     @Override
     public List<AnalysisConstraint> getDSLConstraints() {
-        return List.of(new ConstraintDSL()
-                .ofData()
+        return List.of(new ConstraintDSL().ofData()
                 .neverFlows()
                 .toVertex()
-                .with((vertex) -> vertex.getAllVertexCharacteristics().isEmpty())
+                .with((vertex) -> vertex.getAllVertexCharacteristics()
+                        .isEmpty())
                 .create());
     }
 

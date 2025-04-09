@@ -1,5 +1,7 @@
 package org.dataflowanalysis.examplemodels.results.pcm.models;
 
+import java.util.List;
+import java.util.Map;
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
 import org.dataflowanalysis.analysis.dsl.selectors.Intersection;
@@ -9,9 +11,6 @@ import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 import org.dataflowanalysis.examplemodels.results.pcm.PCMExampleModelResult;
 import org.dataflowanalysis.examplemodels.results.pcm.PCMIdentifier;
 
-import java.util.List;
-import java.util.Map;
-
 public class VariableReturnResult implements PCMExampleModelResult {
     @Override
     public String getModelName() {
@@ -20,8 +19,7 @@ public class VariableReturnResult implements PCMExampleModelResult {
 
     @Override
     public List<AnalysisConstraint> getDSLConstraints() {
-        return List.of(new ConstraintDSL()
-                .ofData()
+        return List.of(new ConstraintDSL().ofData()
                 .withLabel("AssignedRole", ConstraintVariable.of("grantedRoles"))
                 .neverFlows()
                 .toVertex()
@@ -36,9 +34,11 @@ public class VariableReturnResult implements PCMExampleModelResult {
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
         return List.of(
-                new ExpectedViolation(0, PCMIdentifier.of("_nOhAgILtEe2YyoqaKVkqog", false), List.of(new ExpectedCharacteristic("AssignedRole", "User")),
+                new ExpectedViolation(0, PCMIdentifier.of("_nOhAgILtEe2YyoqaKVkqog", false),
+                        List.of(new ExpectedCharacteristic("AssignedRole", "User")),
                         Map.of("RETURN", List.of(new ExpectedCharacteristic("AssignedRole", "Admin")))),
-                new ExpectedViolation(0, PCMIdentifier.of("_9M9DMoLsEe2YyoqaKVkqog", false), List.of(new ExpectedCharacteristic("AssignedRole", "User")),
+                new ExpectedViolation(0, PCMIdentifier.of("_9M9DMoLsEe2YyoqaKVkqog", false),
+                        List.of(new ExpectedCharacteristic("AssignedRole", "User")),
                         Map.of("data", List.of(new ExpectedCharacteristic("AssignedRole", "Admin")))));
     }
 

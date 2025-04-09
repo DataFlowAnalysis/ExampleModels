@@ -1,25 +1,25 @@
 package org.dataflowanalysis.examplemodels.results.pcm.scenarios;
 
+import java.util.List;
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 import org.dataflowanalysis.examplemodels.results.pcm.PCMExampleModelResult;
-
-import java.util.List;
 
 public class BranchingOnlineShopResult implements PCMExampleModelResult {
     @Override
     public String getBaseFolderName() {
         return "scenarios";
     }
+
     @Override
     public String getModelName() {
         return "BranchingOnlineShop";
     }
+
     @Override
     public List<AnalysisConstraint> getDSLConstraints() {
-        return List.of(new ConstraintDSL()
-                .ofData()
+        return List.of(new ConstraintDSL().ofData()
                 .withLabel("DataSensitivity", "Personal")
                 .neverFlows()
                 .toVertex()

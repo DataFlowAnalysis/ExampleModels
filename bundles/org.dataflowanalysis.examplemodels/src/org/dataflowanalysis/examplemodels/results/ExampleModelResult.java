@@ -1,10 +1,9 @@
 package org.dataflowanalysis.examplemodels.results;
 
+import java.util.List;
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.examplemodels.Activator;
 import org.eclipse.core.runtime.Plugin;
-
-import java.util.List;
 
 public interface ExampleModelResult {
     default String getModelProjectName() {

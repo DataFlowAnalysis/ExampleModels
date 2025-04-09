@@ -16,7 +16,9 @@ public class DFDIdentifier implements Identifier {
         if (!(vertex instanceof DFDVertex dfdVertex)) {
             return false;
         }
-        return dfdVertex.getReferencedElement().getId().equals(this.id);
+        return dfdVertex.getReferencedElement()
+                .getId()
+                .equals(this.id);
     }
 
     public static DFDIdentifier of(String id) {

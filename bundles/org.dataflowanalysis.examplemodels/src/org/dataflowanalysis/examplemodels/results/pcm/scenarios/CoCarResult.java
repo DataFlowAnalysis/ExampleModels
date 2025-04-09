@@ -1,10 +1,9 @@
 package org.dataflowanalysis.examplemodels.results.pcm.scenarios;
 
+import java.util.List;
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 import org.dataflowanalysis.examplemodels.results.pcm.PCMExampleModelResult;
-
-import java.util.List;
 
 public class CoCarResult implements PCMExampleModelResult {
     @Override

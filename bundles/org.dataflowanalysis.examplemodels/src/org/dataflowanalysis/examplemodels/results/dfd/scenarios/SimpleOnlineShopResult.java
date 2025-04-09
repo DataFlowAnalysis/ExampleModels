@@ -1,14 +1,13 @@
 package org.dataflowanalysis.examplemodels.results.dfd.scenarios;
 
+import java.util.List;
+import java.util.Map;
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
 import org.dataflowanalysis.examplemodels.results.ExpectedCharacteristic;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 import org.dataflowanalysis.examplemodels.results.dfd.DFDExampleModelResult;
 import org.dataflowanalysis.examplemodels.results.dfd.DFDIdentifier;
-
-import java.util.List;
-import java.util.Map;
 
 public class SimpleOnlineShopResult implements DFDExampleModelResult {
     @Override
@@ -24,8 +23,7 @@ public class SimpleOnlineShopResult implements DFDExampleModelResult {
     @Override
     public List<AnalysisConstraint> getDSLConstraints() {
 
-        return List.of(new ConstraintDSL()
-                .ofData()
+        return List.of(new ConstraintDSL().ofData()
                 .withLabel("Sensitivity", "Personal")
                 .neverFlows()
                 .toVertex()
@@ -36,11 +34,8 @@ public class SimpleOnlineShopResult implements DFDExampleModelResult {
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
         return List.of(new ExpectedViolation(1, new DFDIdentifier("_U27Lor6CEe6fAKdvyu1GEg"),
-                List.of(new ExpectedCharacteristic("Location", "nonEU")),
-                Map.of("_448GwMBCEe62ZOq30ePU7Q", List.of(
-                        new ExpectedCharacteristic("Sensitivity", "Personal"),
-                        new ExpectedCharacteristic("Encryption", "Encrypted")
-                ))));
+                List.of(new ExpectedCharacteristic("Location", "nonEU")), Map.of("_448GwMBCEe62ZOq30ePU7Q",
+                        List.of(new ExpectedCharacteristic("Sensitivity", "Personal"), new ExpectedCharacteristic("Encryption", "Encrypted")))));
     }
 
     @Override

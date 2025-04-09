@@ -1,14 +1,13 @@
 package org.dataflowanalysis.examplemodels.results.pcm.scenarios;
 
+import java.util.List;
+import java.util.Map;
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
 import org.dataflowanalysis.examplemodels.results.ExpectedCharacteristic;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 import org.dataflowanalysis.examplemodels.results.pcm.PCMExampleModelResult;
 import org.dataflowanalysis.examplemodels.results.pcm.PCMIdentifier;
-
-import java.util.List;
-import java.util.Map;
 
 public class InternationalOnlineShopResult implements PCMExampleModelResult {
     @Override
@@ -23,8 +22,7 @@ public class InternationalOnlineShopResult implements PCMExampleModelResult {
 
     @Override
     public List<AnalysisConstraint> getDSLConstraints() {
-        return List.of(new ConstraintDSL()
-                .ofData()
+        return List.of(new ConstraintDSL().ofData()
                 .withLabel("DataSensitivity", "Personal")
                 .neverFlows()
                 .toVertex()
@@ -35,9 +33,11 @@ public class InternationalOnlineShopResult implements PCMExampleModelResult {
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
         return List.of(
-                new ExpectedViolation(0, PCMIdentifier.of("_oGmXgYTjEeywmO_IpTxeAg", true), List.of(new ExpectedCharacteristic("ServerLocation", "nonEU")),
+                new ExpectedViolation(0, PCMIdentifier.of("_oGmXgYTjEeywmO_IpTxeAg", true),
+                        List.of(new ExpectedCharacteristic("ServerLocation", "nonEU")),
                         Map.of("userData", List.of(new ExpectedCharacteristic("DataSensitivity", "Personal")))),
-                new ExpectedViolation(0, PCMIdentifier.of("_oGmXgYTjEeywmO_IpTxeAg", false), List.of(new ExpectedCharacteristic("ServerLocation", "nonEU")),
+                new ExpectedViolation(0, PCMIdentifier.of("_oGmXgYTjEeywmO_IpTxeAg", false),
+                        List.of(new ExpectedCharacteristic("ServerLocation", "nonEU")),
                         Map.of("userData", List.of(new ExpectedCharacteristic("DataSensitivity", "Personal")))));
     }
 

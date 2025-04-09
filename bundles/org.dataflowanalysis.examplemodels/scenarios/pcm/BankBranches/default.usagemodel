@@ -208,7 +208,7 @@
             </lhs>
             <rhs xsi:type="expressions:True" id="_6T0Npj60EeulRPEeT0f8DQ"/>
           </variableCharacterisation_VariableUsage>
-          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="customerName"/>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="customer"/>
         </inputParameterUsages_EntryLevelSystemCall>
       </actions_ScenarioBehaviour>
     </scenarioBehaviour_UsageScenario>

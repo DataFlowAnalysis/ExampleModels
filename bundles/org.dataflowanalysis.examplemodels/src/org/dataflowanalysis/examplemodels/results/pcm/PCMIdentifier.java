@@ -1,11 +1,10 @@
 package org.dataflowanalysis.examplemodels.results.pcm;
 
+import java.util.Optional;
 import org.dataflowanalysis.analysis.core.AbstractVertex;
 import org.dataflowanalysis.analysis.pcm.core.AbstractPCMVertex;
 import org.dataflowanalysis.analysis.pcm.core.CallReturnBehavior;
 import org.dataflowanalysis.examplemodels.results.Identifier;
-
-import java.util.Optional;
 
 public class PCMIdentifier implements Identifier {
     private final String id;
@@ -31,7 +30,9 @@ public class PCMIdentifier implements Identifier {
                 return false;
             }
         }
-        return pcmVertex.getReferencedElement().getId().equals(this.id);
+        return pcmVertex.getReferencedElement()
+                .getId()
+                .equals(this.id);
     }
 
     public static PCMIdentifier of(String id) {
