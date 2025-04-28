@@ -47,7 +47,6 @@ public class MaaSTicketSystemResult implements PCMExampleModelResult {
 
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
-        // TODO: Enter violations
         return List.of();
     }
 

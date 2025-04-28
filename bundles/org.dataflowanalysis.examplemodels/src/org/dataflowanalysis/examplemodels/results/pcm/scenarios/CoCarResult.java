@@ -5,6 +5,9 @@ import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 import org.dataflowanalysis.examplemodels.results.pcm.PCMExampleModelResult;
 
+/**
+ * FIXME: The CoCar Scenario does not have any constraint and therefore does not have expected violations
+ */
 public class CoCarResult implements PCMExampleModelResult {
     @Override
     public String getBaseFolderName() {
@@ -23,13 +26,11 @@ public class CoCarResult implements PCMExampleModelResult {
 
     @Override
     public List<AnalysisConstraint> getDSLConstraints() {
-        // TODO: Does not exist
         return List.of();
     }
 
     @Override
     public List<ExpectedViolation> getExpectedViolations() {
-        // TODO: Enter actual expected violations (should this be per constraint?)
         return List.of();
     }
 
