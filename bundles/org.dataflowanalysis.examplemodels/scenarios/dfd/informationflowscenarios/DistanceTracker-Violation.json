@@ -1,0 +1,826 @@
+{
+    "model": {
+        "canvasBounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 953
+        },
+        "scroll": {
+            "x": -147.35912906610702,
+            "y": -265.28016789087087
+        },
+        "zoom": 1.7295825771324864,
+        "position": {
+            "x": 0,
+            "y": 0
+        },
+        "size": {
+            "width": -1,
+            "height": -1
+        },
+        "features": {},
+        "type": "graph",
+        "id": "root",
+        "children": [
+            {
+                "position": {
+                    "x": 79,
+                    "y": 74
+                },
+                "size": {
+                    "width": -1,
+                    "height": -1
+                },
+                "strokeWidth": 0,
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "User",
+                "labels": [
+                    {
+                        "labelTypeId": "7qzsya",
+                        "labelTypeValueId": "csbgwk"
+                    }
+                ],
+                "ports": [
+                    {
+                        "position": {
+                            "x": -2,
+                            "y": -3.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "behavior": "set ClassificationLevel.User",
+                        "features": {},
+                        "id": "nb83mj",
+                        "type": "port:dfd-output",
+                        "children": []
+                    },
+                    {
+                        "position": {
+                            "x": 50.5,
+                            "y": -3.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "behavior": "set ClassificationLevel.UserTrackingService",
+                        "features": {},
+                        "id": "6mwcw",
+                        "type": "port:dfd-output",
+                        "children": []
+                    },
+                    {
+                        "position": {
+                            "x": 80.5,
+                            "y": 10.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "behavior": "set ClassificationLevel.UserTrackingService",
+                        "features": {},
+                        "id": "lsyc9l",
+                        "type": "port:dfd-output",
+                        "children": []
+                    }
+                ],
+                "hideLabels": false,
+                "minimumWidth": 50,
+                "features": {},
+                "id": "sbw62",
+                "type": "node:input-output",
+                "children": []
+            },
+            {
+                "position": {
+                    "x": 305.5,
+                    "y": 27
+                },
+                "size": {
+                    "width": -1,
+                    "height": -1
+                },
+                "strokeWidth": 0,
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "calculate distance",
+                "labels": [
+                    {
+                        "labelTypeId": "7qzsya",
+                        "labelTypeValueId": "o3fxk"
+                    }
+                ],
+                "ports": [
+                    {
+                        "position": {
+                            "x": 60.5,
+                            "y": -3.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "features": {},
+                        "id": "wmhqbt",
+                        "type": "port:dfd-input",
+                        "children": []
+                    },
+                    {
+                        "position": {
+                            "x": 58,
+                            "y": 42.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "behavior": "forward locations",
+                        "features": {},
+                        "id": "0lojk",
+                        "type": "port:dfd-output",
+                        "children": []
+                    },
+                    {
+                        "position": {
+                            "x": 128.5,
+                            "y": 25.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": true,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "behavior": "forward locations",
+                        "features": {},
+                        "id": "amywti",
+                        "type": "port:dfd-output",
+                        "children": []
+                    }
+                ],
+                "hideLabels": false,
+                "minimumWidth": 50,
+                "features": {},
+                "id": "9ok0ye",
+                "type": "node:function",
+                "children": []
+            },
+            {
+                "position": {
+                    "x": 626,
+                    "y": 92
+                },
+                "size": {
+                    "width": -1,
+                    "height": -1
+                },
+                "strokeWidth": 0,
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "record distance",
+                "labels": [
+                    {
+                        "labelTypeId": "7qzsya",
+                        "labelTypeValueId": "iao8e"
+                    }
+                ],
+                "ports": [
+                    {
+                        "position": {
+                            "x": 50.5,
+                            "y": -3.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "behavior": "forward distance",
+                        "features": {},
+                        "id": "n975iu",
+                        "type": "port:dfd-output",
+                        "children": []
+                    },
+                    {
+                        "position": {
+                            "x": 50.5,
+                            "y": 42.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "features": {},
+                        "id": "466m7",
+                        "type": "port:dfd-input",
+                        "children": []
+                    },
+                    {
+                        "position": {
+                            "x": -3.5,
+                            "y": 18
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "features": {},
+                        "id": "ey0pew",
+                        "type": "port:dfd-input",
+                        "children": []
+                    }
+                ],
+                "hideLabels": false,
+                "minimumWidth": 50,
+                "features": {},
+                "id": "d6mr08",
+                "type": "node:function",
+                "children": []
+            },
+            {
+                "position": {
+                    "x": 626,
+                    "y": -46
+                },
+                "size": {
+                    "width": -1,
+                    "height": -1
+                },
+                "strokeWidth": 0,
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "Distance Store",
+                "labels": [
+                    {
+                        "labelTypeId": "7qzsya",
+                        "labelTypeValueId": "iao8e"
+                    }
+                ],
+                "ports": [
+                    {
+                        "position": {
+                            "x": 55.5,
+                            "y": 38.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "features": {},
+                        "id": "7r5i93",
+                        "type": "port:dfd-input",
+                        "children": []
+                    }
+                ],
+                "hideLabels": false,
+                "minimumWidth": 50,
+                "features": {},
+                "id": "eq0c5k",
+                "type": "node:storage",
+                "children": []
+            },
+            {
+                "position": {
+                    "x": 57.5,
+                    "y": -58
+                },
+                "size": {
+                    "width": -1,
+                    "height": -1
+                },
+                "strokeWidth": 0,
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "confirm location",
+                "labels": [
+                    {
+                        "labelTypeId": "7qzsya",
+                        "labelTypeValueId": "csbgwk"
+                    }
+                ],
+                "ports": [
+                    {
+                        "position": {
+                            "x": 15.5,
+                            "y": 42.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "features": {},
+                        "id": "2qr1s",
+                        "type": "port:dfd-input",
+                        "children": []
+                    },
+                    {
+                        "position": {
+                            "x": 78,
+                            "y": 42.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "features": {},
+                        "id": "1dmj5",
+                        "type": "port:dfd-input",
+                        "children": []
+                    },
+                    {
+                        "position": {
+                            "x": 58,
+                            "y": -3.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "behavior": "forward location,consent\nset ClassificationLevel.UserTrackingService",
+                        "features": {},
+                        "id": "y44ipi",
+                        "type": "port:dfd-output",
+                        "children": []
+                    }
+                ],
+                "hideLabels": false,
+                "minimumWidth": 50,
+                "features": {},
+                "id": "yeuq7e",
+                "type": "node:function",
+                "children": []
+            },
+            {
+                "position": {
+                    "x": 316,
+                    "y": -203
+                },
+                "size": {
+                    "width": -1,
+                    "height": -1
+                },
+                "strokeWidth": 0,
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "record location",
+                "labels": [
+                    {
+                        "labelTypeId": "7qzsya",
+                        "labelTypeValueId": "o3fxk"
+                    }
+                ],
+                "ports": [
+                    {
+                        "position": {
+                            "x": -3.5,
+                            "y": 13
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "features": {},
+                        "id": "5eka79",
+                        "type": "port:dfd-input",
+                        "children": []
+                    },
+                    {
+                        "position": {
+                            "x": 53,
+                            "y": 42.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "behavior": "forward location",
+                        "features": {},
+                        "id": "qs083c",
+                        "type": "port:dfd-output",
+                        "children": []
+                    }
+                ],
+                "hideLabels": false,
+                "minimumWidth": 50,
+                "features": {},
+                "id": "bgbt0r",
+                "type": "node:function",
+                "children": []
+            },
+            {
+                "position": {
+                    "x": 310.5,
+                    "y": 152
+                },
+                "size": {
+                    "width": -1,
+                    "height": -1
+                },
+                "strokeWidth": 0,
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "confirm distance",
+                "labels": [
+                    {
+                        "labelTypeId": "7qzsya",
+                        "labelTypeValueId": "o3fxk"
+                    }
+                ],
+                "ports": [
+                    {
+                        "position": {
+                            "x": 53,
+                            "y": -3.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "features": {},
+                        "id": "t3cfj6",
+                        "type": "port:dfd-input",
+                        "children": []
+                    },
+                    {
+                        "position": {
+                            "x": -3.5,
+                            "y": 15.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "features": {},
+                        "id": "bhm0qk",
+                        "type": "port:dfd-input",
+                        "children": []
+                    },
+                    {
+                        "position": {
+                            "x": 128.5,
+                            "y": 23
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "behavior": "forward distance, consent\nset ClassificationLevel.OnlyDistance",
+                        "features": {},
+                        "id": "ec16ek",
+                        "type": "port:dfd-output",
+                        "children": []
+                    }
+                ],
+                "hideLabels": false,
+                "minimumWidth": 50,
+                "features": {},
+                "id": "7jq43h",
+                "type": "node:function",
+                "children": []
+            },
+            {
+                "routingPoints": [],
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "distance",
+                "features": {},
+                "id": "gmohjk",
+                "type": "edge:arrow",
+                "sourceId": "n975iu",
+                "targetId": "7r5i93",
+                "children": []
+            },
+            {
+                "routingPoints": [],
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "location",
+                "features": {},
+                "id": "dr89pb",
+                "type": "edge:arrow",
+                "sourceId": "nb83mj",
+                "targetId": "2qr1s",
+                "children": []
+            },
+            {
+                "routingPoints": [],
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "consent",
+                "features": {},
+                "id": "45flcd",
+                "type": "edge:arrow",
+                "sourceId": "6mwcw",
+                "targetId": "1dmj5",
+                "children": []
+            },
+            {
+                "routingPoints": [
+                    {
+                        "x": 120,
+                        "y": -185
+                    }
+                ],
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "location",
+                "features": {},
+                "id": "s5scec",
+                "type": "edge:arrow",
+                "sourceId": "y44ipi",
+                "targetId": "5eka79",
+                "children": []
+            },
+            {
+                "routingPoints": [
+                    {
+                        "x": 250,
+                        "y": 90
+                    },
+                    {
+                        "x": 250,
+                        "y": 170
+                    }
+                ],
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "consent",
+                "features": {},
+                "id": "xzzdl9",
+                "type": "edge:arrow",
+                "sourceId": "lsyc9l",
+                "targetId": "bhm0qk",
+                "children": []
+            },
+            {
+                "routingPoints": [
+                    {
+                        "x": 680,
+                        "y": 180
+                    }
+                ],
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "distance",
+                "features": {},
+                "id": "e3hgbh",
+                "type": "edge:arrow",
+                "sourceId": "ec16ek",
+                "targetId": "466m7",
+                "children": []
+            },
+            {
+                "routingPoints": [],
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "distance",
+                "features": {},
+                "id": "yk17zj",
+                "type": "edge:arrow",
+                "sourceId": "0lojk",
+                "targetId": "t3cfj6",
+                "children": []
+            },
+            {
+                "position": {
+                    "x": 311.5,
+                    "y": -86
+                },
+                "size": {
+                    "width": -1,
+                    "height": -1
+                },
+                "strokeWidth": 0,
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "Location Store",
+                "labels": [
+                    {
+                        "labelTypeId": "7qzsya",
+                        "labelTypeValueId": "o3fxk"
+                    }
+                ],
+                "ports": [
+                    {
+                        "position": {
+                            "x": 55.5,
+                            "y": -3.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "features": {},
+                        "id": "qhr9j6",
+                        "type": "port:dfd-input",
+                        "children": []
+                    },
+                    {
+                        "position": {
+                            "x": 60.5,
+                            "y": 38.5
+                        },
+                        "size": {
+                            "width": -1,
+                            "height": -1
+                        },
+                        "strokeWidth": 0,
+                        "selected": false,
+                        "hoverFeedback": false,
+                        "opacity": 1,
+                        "behavior": "forward location",
+                        "features": {},
+                        "id": "i3cec88",
+                        "type": "port:dfd-output",
+                        "children": []
+                    }
+                ],
+                "hideLabels": false,
+                "minimumWidth": 50,
+                "features": {},
+                "id": "9ysgxs",
+                "type": "node:storage",
+                "children": []
+            },
+            {
+                "routingPoints": [],
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "location",
+                "features": {},
+                "id": "04qtap",
+                "type": "edge:arrow",
+                "sourceId": "qs083c",
+                "targetId": "qhr9j6",
+                "children": []
+            },
+            {
+                "routingPoints": [],
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "text": "locations",
+                "features": {},
+                "id": "d7tt04",
+                "type": "edge:arrow",
+                "sourceId": "i3cec88",
+                "targetId": "wmhqbt",
+                "routerKind": "polyline",
+                "children": []
+            },
+            {
+                "routingPoints": [],
+                "selected": false,
+                "hoverFeedback": false,
+                "opacity": 1,
+                "features": {},
+                "id": "1y7lca",
+                "type": "edge:arrow",
+                "sourceId": "amywti",
+                "targetId": "ey0pew",
+                "children": [],
+                "text": "distanceViolation"
+            }
+        ]
+    },
+    "labelTypes": [
+        {
+            "id": "7qzsya",
+            "name": "ClearanceLevel",
+            "values": [
+                {
+                    "id": "csbgwk",
+                    "text": "User"
+                },
+                {
+                    "id": "o3fxk",
+                    "text": "UserTrackingService"
+                },
+                {
+                    "id": "iao8e",
+                    "text": "OnlyDistance"
+                }
+            ]
+        },
+        {
+            "id": "gejc1c",
+            "name": "ClassificationLevel",
+            "values": [
+                {
+                    "id": "mfblx",
+                    "text": "User"
+                },
+                {
+                    "id": "ligizb",
+                    "text": "UserTrackingService"
+                },
+                {
+                    "id": "py0p7n",
+                    "text": "OnlyDistance"
+                }
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "id": "yz7vrd",
+            "name": "DistanceConstraint ",
+            "constraint": "data ClassificationLevel.UserTrackingService neverFlows vertex ClearanceLevel.OnlyDistance"
+        }
+    ],
+    "mode": "edit"
+}
