@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 import org.dataflowanalysis.analysis.dsl.AnalysisConstraint;
 import org.dataflowanalysis.analysis.dsl.constraint.ConstraintDSL;
+import org.dataflowanalysis.analysis.dsl.selectors.Intersection;
+import org.dataflowanalysis.analysis.dsl.variable.ConstraintVariable;
 import org.dataflowanalysis.examplemodels.results.ExpectedCharacteristic;
 import org.dataflowanalysis.examplemodels.results.ExpectedViolation;
 import org.dataflowanalysis.examplemodels.results.pcm.PCMExampleModelResult;
@@ -27,7 +29,17 @@ public class BankBranchesResult implements PCMExampleModelResult {
                 .neverFlows()
                 .toVertex()
                 .withCharacteristic("Role", "Clerk")
-                .create());
+                .create(),
+                new ConstraintDSL().ofData()
+                        .withLabel("Origin", ConstraintVariable.of("OriginLocation"))
+                        .fromNode()
+                        .neverFlows()
+                        .toVertex()
+                        .withCharacteristic("Role", "Clerk")
+                        .withCharacteristic("Location", ConstraintVariable.of("DestinationLocation"))
+                        .where()
+                        .isEmpty(Intersection.of(ConstraintVariable.of("OriginLocation"), ConstraintVariable.of("DestinationLocation")))
+                        .create());
     }
 
     @Override
