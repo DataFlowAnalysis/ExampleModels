@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="ASCII"?>
+<datadictionary:DataDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datadictionary="http://dataflowanalysis.org/dfd/datadictionary" id="_GvyZIS_qEfCy_4XEclxE_A">
+  <labelTypes id="vbfy2" entityName="DataOrigin">
+    <label id="2c3wy" entityName="Asia"/>
+    <label id="3if1j8" entityName="USA"/>
+  </labelTypes>
+  <labelTypes id="hfqk6p" entityName="DataStatus">
+    <label id="rxiuzn" entityName="Regular"/>
+    <label id="o1lrl" entityName="Celebrity"/>
+  </labelTypes>
+  <labelTypes id="e1uhte" entityName="NodeLocation">
+    <label id="tk7juo" entityName="Asia"/>
+    <label id="7ftw9n" entityName="USA"/>
+  </labelTypes>
+  <labelTypes id="ym0xoi" entityName="NodeRole">
+    <label id="fpzrr" entityName="Clerk"/>
+    <label id="w732lv" entityName="Manager"/>
+  </labelTypes>
+  <behavior id="_GvyZLy_qEfCy_4XEclxE_A" entityName="determine credit line">
+    <inPin id="8wbvcc" entityName="determine credit line_in_customer"/>
+    <outPin id="d4ysjm" entityName="determine credit line_out_creditLine"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_GvzAUC_qEfCy_4XEclxE_A" outputPin="d4ysjm" inputPins="8wbvcc"/>
+  </behavior>
+  <behavior id="_GvyZMy_qEfCy_4XEclxE_A" entityName="register celebrity">
+    <inPin id="60ebcl" entityName="register celebrity_in_celebrityCustomerDetails"/>
+    <outPin id="pwd7z" entityName="register celebrity_out_customer"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_GvyZgy_qEfCy_4XEclxE_A" outputPin="pwd7z" inputPins="60ebcl"/>
+  </behavior>
+  <behavior id="_GvyZNy_qEfCy_4XEclxE_A" entityName="register customer">
+    <inPin id="ww2uj" entityName="register customer_in_customerDetails"/>
+    <outPin id="3wlmh" entityName="register customer_out_customer"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_GvzAUy_qEfCy_4XEclxE_A" outputPin="3wlmh" inputPins="ww2uj"/>
+  </behavior>
+  <behavior id="_GvyZOy_qEfCy_4XEclxE_A" entityName="determine credit line">
+    <inPin id="wwtile" entityName="determine credit line_in_customer"/>
+    <outPin id="lr93t" entityName="determine credit line_out_creditLine"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_GvzANy_qEfCy_4XEclxE_A" outputPin="lr93t" inputPins="wwtile"/>
+  </behavior>
+  <behavior id="_GvyZPy_qEfCy_4XEclxE_A" entityName="Customer Storage">
+    <inPin id="q9joat" entityName="Customer Storage_in_customer"/>
+    <outPin id="4u2qg" entityName="Customer Storage_out_customers"/>
+    <outPin id="ax0cb" entityName="Customer Storage_out_customer"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_GvzAUS_qEfCy_4XEclxE_A" outputPin="ax0cb" inputPins="q9joat"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_GvzAUi_qEfCy_4XEclxE_A" outputPin="4u2qg" inputPins="q9joat"/>
+  </behavior>
+  <behavior id="_GvyZRC_qEfCy_4XEclxE_A" entityName="Celebrity Customer Storage">
+    <inPin id="ffzcs" entityName="Celebrity Customer Storage_in_customer"/>
+  </behavior>
+  <behavior id="_GvyZRy_qEfCy_4XEclxE_A" entityName="Clerk Asia">
+    <inPin id="t2a5tp" entityName="Clerk Asia_in_customer"/>
+    <inPin id="bgccb" entityName="Clerk Asia_in_creditLine"/>
+    <outPin id="hvufvm" entityName="Clerk Asia_out_customerName"/>
+    <assignment xsi:type="datadictionary:SetAssignment" id="_GvyZgS_qEfCy_4XEclxE_A" outputPin="hvufvm" outputLabels="2c3wy"/>
+    <assignment xsi:type="datadictionary:SetAssignment" id="_GvyZgi_qEfCy_4XEclxE_A" outputPin="hvufvm" outputLabels="rxiuzn"/>
+  </behavior>
+  <behavior id="_GvyZTC_qEfCy_4XEclxE_A" entityName="Manager">
+    <inPin id="xeq4fj" entityName="Manager_in_customer1"/>
+    <outPin id="en7hj8" entityName="Manager_out_customerName1"/>
+    <outPin id="es1mdy" entityName="Manager_out_celebrityCustomerDetails"/>
+    <outPin id="bt3ula" entityName="Manager_out_customerName"/>
+    <assignment xsi:type="datadictionary:SetAssignment" id="_GvzAOC_qEfCy_4XEclxE_A" outputPin="bt3ula" outputLabels="3if1j8"/>
+    <assignment xsi:type="datadictionary:SetAssignment" id="_GvzAOS_qEfCy_4XEclxE_A" outputPin="bt3ula" outputLabels="rxiuzn"/>
+    <assignment xsi:type="datadictionary:SetAssignment" id="_GvzAOi_qEfCy_4XEclxE_A" outputPin="en7hj8" outputLabels="rxiuzn"/>
+    <assignment xsi:type="datadictionary:SetAssignment" id="_GvzAOy_qEfCy_4XEclxE_A" outputPin="en7hj8" outputLabels="3if1j8"/>
+    <assignment xsi:type="datadictionary:SetAssignment" id="_GvzAPC_qEfCy_4XEclxE_A" outputPin="es1mdy" outputLabels="3if1j8"/>
+    <assignment xsi:type="datadictionary:SetAssignment" id="_GvzAPS_qEfCy_4XEclxE_A" outputPin="es1mdy" outputLabels="o1lrl"/>
+  </behavior>
+  <behavior id="_GvyZUi_qEfCy_4XEclxE_A" entityName="Storage">
+    <inPin id="3o38q" entityName="Storage_in_customer"/>
+    <outPin id="5j2zbr" entityName="Storage_out_customers"/>
+  </behavior>
+  <behavior id="_GvyZVi_qEfCy_4XEclxE_A" entityName="move customer">
+    <inPin id="c42mg8" entityName="move customer_in_customerName"/>
+    <inPin id="5exvv" entityName="move customer_in_customer"/>
+    <outPin id="dugp4b" entityName="move customer_out_customer"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_GvyZfi_qEfCy_4XEclxE_A" outputPin="dugp4b" inputPins="c42mg8"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvyZfy_qEfCy_4XEclxE_A" outputPin="dugp4b" outputLabels="2c3wy" inputPins="5exvv c42mg8">
+      <term xsi:type="datadictionary:LabelReference" id="_GvyZgC_qEfCy_4XEclxE_A" label="3if1j8"/>
+    </assignment>
+  </behavior>
+  <behavior id="_GvyZWy_qEfCy_4XEclxE_A" entityName="Clerk USA">
+    <inPin id="jrprc" entityName="Clerk USA_in_creditLine"/>
+    <outPin id="now1vq" entityName="Clerk USA_out_customerName"/>
+    <outPin id="c7z61d" entityName="Clerk USA_out_customerDetails"/>
+    <assignment xsi:type="datadictionary:SetAssignment" id="_GvzAMy_qEfCy_4XEclxE_A" outputPin="c7z61d" outputLabels="3if1j8"/>
+    <assignment xsi:type="datadictionary:SetAssignment" id="_GvzANC_qEfCy_4XEclxE_A" outputPin="c7z61d" outputLabels="rxiuzn"/>
+    <assignment xsi:type="datadictionary:SetAssignment" id="_GvzANS_qEfCy_4XEclxE_A" outputPin="now1vq" outputLabels="3if1j8"/>
+    <assignment xsi:type="datadictionary:SetAssignment" id="_GvzANi_qEfCy_4XEclxE_A" outputPin="now1vq" outputLabels="rxiuzn"/>
+  </behavior>
+  <behavior id="_GvyZYC_qEfCy_4XEclxE_A" entityName="find customer">
+    <inPin id="kxh39" entityName="find customer_in_customers"/>
+    <inPin id="ywzj8k" entityName="find customer_in_customerName"/>
+    <outPin id="3q1z7q" entityName="find customer_out_customer"/>
+    <outPin id="t9x86" entityName="find customer_out_customer"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_GvyZhC_qEfCy_4XEclxE_A" outputPin="3q1z7q" inputPins="ywzj8k"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvyZhS_qEfCy_4XEclxE_A" outputPin="3q1z7q" outputLabels="2c3wy" inputPins="ywzj8k kxh39">
+      <term xsi:type="datadictionary:LabelReference" id="_GvyZhi_qEfCy_4XEclxE_A" label="2c3wy"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvyZhy_qEfCy_4XEclxE_A" outputPin="3q1z7q" outputLabels="3if1j8" inputPins="ywzj8k kxh39">
+      <term xsi:type="datadictionary:LabelReference" id="_GvyZiC_qEfCy_4XEclxE_A" label="3if1j8"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvyZiS_qEfCy_4XEclxE_A" outputPin="3q1z7q" outputLabels="rxiuzn" inputPins="ywzj8k kxh39">
+      <term xsi:type="datadictionary:LabelReference" id="_GvyZii_qEfCy_4XEclxE_A" label="rxiuzn"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvyZiy_qEfCy_4XEclxE_A" outputPin="3q1z7q" outputLabels="o1lrl" inputPins="ywzj8k kxh39">
+      <term xsi:type="datadictionary:LabelReference" id="_GvyZjC_qEfCy_4XEclxE_A" label="o1lrl"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_GvyZjS_qEfCy_4XEclxE_A" outputPin="t9x86" inputPins="ywzj8k"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvyZji_qEfCy_4XEclxE_A" outputPin="t9x86" outputLabels="2c3wy" inputPins="ywzj8k kxh39">
+      <term xsi:type="datadictionary:LabelReference" id="_GvyZjy_qEfCy_4XEclxE_A" label="2c3wy"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvyZkC_qEfCy_4XEclxE_A" outputPin="t9x86" outputLabels="3if1j8" inputPins="ywzj8k kxh39">
+      <term xsi:type="datadictionary:LabelReference" id="_GvyZkS_qEfCy_4XEclxE_A" label="3if1j8"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvyZki_qEfCy_4XEclxE_A" outputPin="t9x86" outputLabels="rxiuzn" inputPins="ywzj8k kxh39">
+      <term xsi:type="datadictionary:LabelReference" id="_GvzAMC_qEfCy_4XEclxE_A" label="rxiuzn"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvzAMS_qEfCy_4XEclxE_A" outputPin="t9x86" outputLabels="o1lrl" inputPins="ywzj8k kxh39">
+      <term xsi:type="datadictionary:LabelReference" id="_GvzAMi_qEfCy_4XEclxE_A" label="o1lrl"/>
+    </assignment>
+  </behavior>
+  <behavior id="_GvyZZi_qEfCy_4XEclxE_A" entityName="find customer">
+    <inPin id="z77n8r" entityName="find customer_in_customerName"/>
+    <inPin id="lhkzv" entityName="find customer_in_customerName1"/>
+    <inPin id="4wct1m" entityName="find customer_in_customers"/>
+    <outPin id="lsac3j" entityName="find customer_out_customer"/>
+    <outPin id="tbd5h7" entityName="find customer_out_customer1"/>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_GvzAPi_qEfCy_4XEclxE_A" outputPin="tbd5h7" inputPins="lhkzv"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvzAPy_qEfCy_4XEclxE_A" outputPin="tbd5h7" outputLabels="2c3wy" inputPins="4wct1m">
+      <term xsi:type="datadictionary:TRUE" id="_GvzAQC_qEfCy_4XEclxE_A"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvzAQS_qEfCy_4XEclxE_A" outputPin="tbd5h7" outputLabels="3if1j8" inputPins="4wct1m">
+      <term xsi:type="datadictionary:TRUE" id="_GvzAQi_qEfCy_4XEclxE_A"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvzAQy_qEfCy_4XEclxE_A" outputPin="tbd5h7" outputLabels="rxiuzn" inputPins="4wct1m">
+      <term xsi:type="datadictionary:TRUE" id="_GvzARC_qEfCy_4XEclxE_A"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvzARS_qEfCy_4XEclxE_A" outputPin="tbd5h7" outputLabels="o1lrl" inputPins="4wct1m">
+      <term xsi:type="datadictionary:TRUE" id="_GvzARi_qEfCy_4XEclxE_A"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:ForwardingAssignment" id="_GvzARy_qEfCy_4XEclxE_A" outputPin="lsac3j" inputPins="z77n8r"/>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvzASC_qEfCy_4XEclxE_A" outputPin="lsac3j" outputLabels="2c3wy" inputPins="z77n8r 4wct1m">
+      <term xsi:type="datadictionary:LabelReference" id="_GvzASS_qEfCy_4XEclxE_A" label="2c3wy"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvzASi_qEfCy_4XEclxE_A" outputPin="lsac3j" outputLabels="3if1j8" inputPins="z77n8r 4wct1m">
+      <term xsi:type="datadictionary:LabelReference" id="_GvzASy_qEfCy_4XEclxE_A" label="3if1j8"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvzATC_qEfCy_4XEclxE_A" outputPin="lsac3j" outputLabels="rxiuzn" inputPins="z77n8r 4wct1m">
+      <term xsi:type="datadictionary:LabelReference" id="_GvzATS_qEfCy_4XEclxE_A" label="rxiuzn"/>
+    </assignment>
+    <assignment xsi:type="datadictionary:Assignment" id="_GvzATi_qEfCy_4XEclxE_A" outputPin="lsac3j" outputLabels="o1lrl" inputPins="z77n8r 4wct1m">
+      <term xsi:type="datadictionary:LabelReference" id="_GvzATy_qEfCy_4XEclxE_A" label="o1lrl"/>
+    </assignment>
+  </behavior>
+</datadictionary:DataDictionary>
